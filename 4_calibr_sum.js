@@ -491,7 +491,7 @@ async function experimentInit() {
   textbox = new visual.TextBox({
     win: psychoJS.window,
     name: 'textbox',
-    text: 'Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
+    text: ' - введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
     placeholder: 'Поле ввода:',
     font: 'Arial',
     pos: [0, 0], 
@@ -2692,7 +2692,7 @@ function Get_pointsRoutineBegin(snapshot) {
         routineTimer.reset();
         Get_pointsMaxDurationReached = false;
         // update component parameters for each repeat
-        textbox.setText('Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:');
+        textbox.setText(' - введите номер строки для учета баллов. Затем нажмите на пробел для завершения:');
         textbox.refresh();
         gp_key_resp.keys = undefined;
         gp_key_resp.rt = undefined;
