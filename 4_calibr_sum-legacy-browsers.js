@@ -2331,6 +2331,8 @@ function fb_taskRoutineEachFrame() {
   }
   
   
+var tmp;
+var variance;
 var sd_rt;
 function fb_taskRoutineEnd(snapshot) {
     return async function () {
@@ -2342,8 +2344,14 @@ function fb_taskRoutineEnd(snapshot) {
       });
       psychoJS.experiment.addData('fb_task.stopped', globalClock.getTime());
       // Run 'End Routine' code from code_4
-      mean_rt = np.mean(all_rt);
-      sd_rt = np.std(all_rt);
+      mean_rt = (util.sum(all_rt) / all_rt.length);
+      tmp = 0.0;
+      for (var x, _pj_c = 0, _pj_a = all_rt, _pj_b = _pj_a.length; (_pj_c < _pj_b); _pj_c += 1) {
+          x = _pj_a[_pj_c];
+          tmp += Math.pow((x - mean_rt), 2);
+      }
+      variance = (tmp / all_rt.length);
+      sd_rt = Math.pow(variance, 0.5);
       psychoJS.experiment.addData("corr_sum", corr_sum);
       psychoJS.experiment.addData("mean_rt", mean_rt);
       psychoJS.experiment.addData("sd_rt", sd_rt);

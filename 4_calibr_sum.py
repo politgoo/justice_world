@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 14:49:37 2025
+    on Tue Dec 30 16:13:50 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -2323,8 +2323,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         fb_task.tStopRefresh = tThisFlipGlobal
         thisExp.addData('fb_task.stopped', fb_task.tStop)
         # Run 'End Routine' code from code_4
-        mean_rt = np.mean(all_rt)
-        sd_rt = np.std(all_rt)
+        #mean_rt = np.mean(all_rt)
+        #sd_rt = np.std(all_rt)
+        
+        # manually count same mean_rt, sd_rt
+        mean_rt = sum(all_rt) / len(all_rt)
+        tmp = 0.0
+        for x in all_rt:
+            tmp += (x - mean_rt) ** 2
+        variance = tmp / len(all_rt)
+        sd_rt = variance ** 0.5
         
         thisExp.addData('corr_sum', corr_sum)
         
