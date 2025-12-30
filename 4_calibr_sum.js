@@ -493,8 +493,8 @@ async function experimentInit() {
   get_textbox = new visual.TextBox({
     win: psychoJS.window,
     name: 'get_textbox',
-    text: 'Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.\n\n',
-    placeholder: 'Поле ввода:',
+    text: '',
+    placeholder: 'Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.',
     font: 'Arial',
     pos: [0, 0], 
     draggable: false,
@@ -2695,7 +2695,7 @@ function Get_pointsRoutineBegin(snapshot) {
         gp_key_resp.keys = undefined;
         gp_key_resp.rt = undefined;
         _gp_key_resp_allKeys = [];
-        get_textbox.setText('Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.\n\n');
+        get_textbox.setText('');
         get_textbox.refresh();
         psychoJS.experiment.addData('Get_points.started', globalClock.getTime());
         Get_pointsMaxDuration = null
