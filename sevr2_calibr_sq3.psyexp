@@ -770,8 +770,8 @@
       <CodeComponent name="code_4" plugin="None">
         <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
-        <Param val="msg = ''&amp;#10;corr_sum = 0&amp;#10;all_rt = []&amp;#10;SD_rt = []&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
-        <Param val="msg = &quot;&quot;;&amp;#10;corr_sum = 0;&amp;#10;all_rt = [];&amp;#10;SD_rt = [];&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="msg = ''&amp;#10;corr_sum = 0&amp;#10;all_rt = []&amp;#10;SD_rt = []&amp;#10;np = None" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="msg = &quot;&quot;;&amp;#10;corr_sum = 0;&amp;#10;all_rt = [];&amp;#10;SD_rt = [];&amp;#10;np = null;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="if (resp.keys) {&amp;#10;    all_rt.push(resp.rt);&amp;#10;    if ((resp.corr === 1)) {&amp;#10;        msg = &quot;\u0412\u0435\u0440\u043d\u043e!&quot;;&amp;#10;        corr_sum += 1;&amp;#10;    } else {&amp;#10;        msg = &quot;\u0423\u0432\u044b(&quot;;&amp;#10;    }&amp;#10;} else {&amp;#10;    msg = &quot;\u041d\u0435 \u0443\u0441\u043f\u0435\u043b\u0438&quot;;&amp;#10;}&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
         <Param val="if resp.keys:&amp;#10;   all_rt.append(resp.rt)&amp;#10;   if resp.corr == 1:&amp;#10;       msg = 'Верно!'&amp;#10;       corr_sum +=1&amp;#10;   else:&amp;#10;       msg = 'Увы('&amp;#10;else:&amp;#10;    msg = 'Не успели'&amp;#10;    &amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>

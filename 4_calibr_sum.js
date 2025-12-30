@@ -183,6 +183,7 @@ var fb_taskClock;
 var corr_sum;
 var all_rt;
 var SD_rt;
+var np;
 var text_fb_task;
 var sliderClock;
 var sl_h;
@@ -425,6 +426,7 @@ async function experimentInit() {
   corr_sum = 0;
   all_rt = [];
   SD_rt = [];
+  np = null;
   
   text_fb_task = new visual.TextStim({
     win: psychoJS.window,
