@@ -188,6 +188,7 @@ var key_resp_2;
 var Get_pointsClock;
 var gp_key_resp;
 var get_textbox;
+var text_6;
 var thanksClock;
 var text_th;
 var globalClock;
@@ -486,7 +487,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'get_textbox',
     text: '',
-    placeholder: 'Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.',
+    placeholder: undefined,
     font: 'Arial',
     pos: [0, 0], 
     draggable: false,
@@ -506,6 +507,18 @@ async function experimentInit() {
     multiline: true,
     anchor: 'center',
     depth: -1.0 
+  });
+  
+  text_6 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_6',
+    text: 'Введите номер строки для получения баллов. \n\nНажмите "пробел", чтобы завершить.',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: -2.0 
   });
   
   // Initialize components for Routine "thanks"
@@ -2711,6 +2724,7 @@ function Get_pointsRoutineBegin(snapshot) {
         Get_pointsComponents = [];
         Get_pointsComponents.push(gp_key_resp);
         Get_pointsComponents.push(get_textbox);
+        Get_pointsComponents.push(text_6);
         
         Get_pointsComponents.forEach( function(thisComponent) {
           if ('status' in thisComponent)
@@ -2767,6 +2781,21 @@ function Get_pointsRoutineEachFrame() {
         
         // if get_textbox is active this frame...
         if (get_textbox.status === PsychoJS.Status.STARTED) {
+        }
+        
+        
+        // *text_6* updates
+        if (t >= 0.0 && text_6.status === PsychoJS.Status.NOT_STARTED) {
+          // keep track of start time/frame for later
+          text_6.tStart = t;  // (not accounting for frame time here)
+          text_6.frameNStart = frameN;  // exact frame index
+          
+          text_6.setAutoDraw(true);
+        }
+        
+        
+        // if text_6 is active this frame...
+        if (text_6.status === PsychoJS.Status.STARTED) {
         }
         
         // check for quit (typically the Esc key)
