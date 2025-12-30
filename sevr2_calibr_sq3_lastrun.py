@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 17:39:11 2025
+    on Tue Dec 30 18:57:55 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -602,9 +602,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp_2 = keyboard.Keyboard(deviceName='key_resp_2')
     
     # --- Initialize components for Routine "Get_points" ---
-    gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
-    get_textbox = visual.TextBox2(
-         win, text='Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.\n\n', placeholder='Поле ввода:', font='Arial',
+    textbox = visual.TextBox2(
+         win, text='Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:', placeholder='Поле ввода:', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
@@ -616,9 +615,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=True,
-         name='get_textbox',
-         depth=-1, autoLog=True,
+         name='textbox',
+         depth=0, autoLog=True,
     )
+    gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
     
     # --- Initialize components for Routine "thanks" ---
     text_th = visual.TextStim(win=win, name='text_th',
@@ -2733,16 +2733,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Get_points
     Get_points = data.Routine(
         name='Get_points',
-        components=[gp_key_resp, get_textbox],
+        components=[textbox, gp_key_resp],
     )
     Get_points.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    textbox.reset()
     # create starting attributes for gp_key_resp
     gp_key_resp.keys = []
     gp_key_resp.rt = []
     _gp_key_resp_allKeys = []
-    get_textbox.reset()
     # store start times for Get_points
     Get_points.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     Get_points.tStart = globalClock.getTime(format='float')
@@ -2773,18 +2773,36 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
+        # *textbox* updates
+        
+        # if textbox is starting this frame...
+        if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            textbox.frameNStart = frameN  # exact frame index
+            textbox.tStart = t  # local t and not account for scr refresh
+            textbox.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'textbox.started')
+            # update status
+            textbox.status = STARTED
+            textbox.setAutoDraw(True)
+        
+        # if textbox is active this frame...
+        if textbox.status == STARTED:
+            # update params
+            pass
+        
         # *gp_key_resp* updates
         waitOnFlip = False
         
         # if gp_key_resp is starting this frame...
-        if gp_key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if gp_key_resp.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
             # keep track of start time/frame for later
             gp_key_resp.frameNStart = frameN  # exact frame index
             gp_key_resp.tStart = t  # local t and not account for scr refresh
             gp_key_resp.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(gp_key_resp, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'gp_key_resp.started')
             # update status
             gp_key_resp.status = STARTED
             # keyboard checking is just starting
@@ -2800,24 +2818,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 gp_key_resp.duration = _gp_key_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # *get_textbox* updates
-        
-        # if get_textbox is starting this frame...
-        if get_textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            get_textbox.frameNStart = frameN  # exact frame index
-            get_textbox.tStart = t  # local t and not account for scr refresh
-            get_textbox.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(get_textbox, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            get_textbox.status = STARTED
-            get_textbox.setAutoDraw(True)
-        
-        # if get_textbox is active this frame...
-        if get_textbox.status == STARTED:
-            # update params
-            pass
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2858,14 +2858,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     Get_points.tStop = globalClock.getTime(format='float')
     Get_points.tStopRefresh = tThisFlipGlobal
     thisExp.addData('Get_points.stopped', Get_points.tStop)
-    # check responses
-    if gp_key_resp.keys in ['', [], None]:  # No response was made
-        gp_key_resp.keys = None
-    thisExp.addData('gp_key_resp.keys',gp_key_resp.keys)
-    if gp_key_resp.keys != None:  # we had a response
-        thisExp.addData('gp_key_resp.rt', gp_key_resp.rt)
-        thisExp.addData('gp_key_resp.duration', gp_key_resp.duration)
-    thisExp.addData('get_textbox.text',get_textbox.text)
+    thisExp.addData('textbox.text',textbox.text)
     thisExp.nextEntry()
     # the Routine "Get_points" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()

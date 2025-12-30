@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 17:42:50 2025
+    on Tue Dec 30 18:38:52 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -200,7 +200,7 @@ def setupWindow(expInfo=None, win=None):
         # if not given a window to setup, make one
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
-            winType='pyglet', allowGUI=True, allowStencil=True,
+            winType='pyglet', allowGUI=True, allowStencil=False,
             monitor='testMonitor', color=[-0.2314, -0.2314, -0.2314], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
@@ -323,6 +323,12 @@ def setupDevices(expInfo, thisExp, win):
         gp_key_resp = deviceManager.addDevice(
             deviceClass='keyboard',
             deviceName='gp_key_resp',
+        )
+    if deviceManager.getDevice('key_resp_3') is None:
+        # initialise key_resp_3
+        key_resp_3 = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='key_resp_3',
         )
     # return True if completed successfully
     return True
@@ -603,22 +609,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "Get_points" ---
     gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
-    get_textbox = visual.TextBox2(
-         win, text='Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.\n\n', placeholder='Поле ввода:', font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
-         opacity=None,
-         bold=False, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=True,
-         name='get_textbox',
-         depth=-1, autoLog=True,
-    )
+    text_6 = visual.TextStim(win=win, name='text_6',
+        text='Введите номер строки для учета баллов.\n\nНажмите "пробел" для завершения.',
+        font='Arial',
+        pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
+    key_resp_3 = keyboard.Keyboard(deviceName='key_resp_3')
     
     # --- Initialize components for Routine "thanks" ---
     text_th = visual.TextStim(win=win, name='text_th',
@@ -2733,7 +2731,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Get_points
     Get_points = data.Routine(
         name='Get_points',
-        components=[gp_key_resp, get_textbox],
+        components=[gp_key_resp, text_6, key_resp_3],
     )
     Get_points.status = NOT_STARTED
     continueRoutine = True
@@ -2742,7 +2740,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     gp_key_resp.keys = []
     gp_key_resp.rt = []
     _gp_key_resp_allKeys = []
-    get_textbox.reset()
+    # create starting attributes for key_resp_3
+    key_resp_3.keys = []
+    key_resp_3.rt = []
+    _key_resp_3_allKeys = []
     # store start times for Get_points
     Get_points.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     Get_points.tStart = globalClock.getTime(format='float')
@@ -2783,8 +2784,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             gp_key_resp.tStart = t  # local t and not account for scr refresh
             gp_key_resp.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(gp_key_resp, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'gp_key_resp.started')
             # update status
             gp_key_resp.status = STARTED
             # keyboard checking is just starting
@@ -2792,32 +2791,58 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(gp_key_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(gp_key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if gp_key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = gp_key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = gp_key_resp.getKeys(keyList=['space','0','1','2','3','4','5','6','7','8','9'], ignoreKeys=["escape"], waitRelease=False)
             _gp_key_resp_allKeys.extend(theseKeys)
             if len(_gp_key_resp_allKeys):
-                gp_key_resp.keys = _gp_key_resp_allKeys[-1].name  # just the last key pressed
-                gp_key_resp.rt = _gp_key_resp_allKeys[-1].rt
-                gp_key_resp.duration = _gp_key_resp_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
+                gp_key_resp.keys = [key.name for key in _gp_key_resp_allKeys]  # storing all keys
+                gp_key_resp.rt = [key.rt for key in _gp_key_resp_allKeys]
+                gp_key_resp.duration = [key.duration for key in _gp_key_resp_allKeys]
         
-        # *get_textbox* updates
+        # *text_6* updates
         
-        # if get_textbox is starting this frame...
-        if get_textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if text_6 is starting this frame...
+        if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            get_textbox.frameNStart = frameN  # exact frame index
-            get_textbox.tStart = t  # local t and not account for scr refresh
-            get_textbox.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(get_textbox, 'tStartRefresh')  # time at next scr refresh
+            text_6.frameNStart = frameN  # exact frame index
+            text_6.tStart = t  # local t and not account for scr refresh
+            text_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
             # update status
-            get_textbox.status = STARTED
-            get_textbox.setAutoDraw(True)
+            text_6.status = STARTED
+            text_6.setAutoDraw(True)
         
-        # if get_textbox is active this frame...
-        if get_textbox.status == STARTED:
+        # if text_6 is active this frame...
+        if text_6.status == STARTED:
             # update params
             pass
+        
+        # *key_resp_3* updates
+        waitOnFlip = False
+        
+        # if key_resp_3 is starting this frame...
+        if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_3.frameNStart = frameN  # exact frame index
+            key_resp_3.tStart = t  # local t and not account for scr refresh
+            key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp_3.started')
+            # update status
+            key_resp_3.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_3.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_3.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_3_allKeys.extend(theseKeys)
+            if len(_key_resp_3_allKeys):
+                key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+                key_resp_3.rt = _key_resp_3_allKeys[-1].rt
+                key_resp_3.duration = _key_resp_3_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2865,7 +2890,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if gp_key_resp.keys != None:  # we had a response
         thisExp.addData('gp_key_resp.rt', gp_key_resp.rt)
         thisExp.addData('gp_key_resp.duration', gp_key_resp.duration)
-    thisExp.addData('get_textbox.text',get_textbox.text)
+    # check responses
+    if key_resp_3.keys in ['', [], None]:  # No response was made
+        key_resp_3.keys = None
+    thisExp.addData('key_resp_3.keys',key_resp_3.keys)
+    if key_resp_3.keys != None:  # we had a response
+        thisExp.addData('key_resp_3.rt', key_resp_3.rt)
+        thisExp.addData('key_resp_3.duration', key_resp_3.duration)
     thisExp.nextEntry()
     # the Routine "Get_points" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()

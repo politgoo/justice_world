@@ -186,9 +186,8 @@ var mean_rt;
 var text_5;
 var key_resp_2;
 var Get_pointsClock;
+var textbox;
 var gp_key_resp;
-var get_textbox;
-var text_6;
 var thanksClock;
 var text_th;
 var globalClock;
@@ -481,13 +480,11 @@ async function experimentInit() {
   
   // Initialize components for Routine "Get_points"
   Get_pointsClock = new util.Clock();
-  gp_key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
-  
-  get_textbox = new visual.TextBox({
+  textbox = new visual.TextBox({
     win: psychoJS.window,
-    name: 'get_textbox',
-    text: '',
-    placeholder: undefined,
+    name: 'textbox',
+    text: 'Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
+    placeholder: 'Поле ввода:',
     font: 'Arial',
     pos: [0, 0], 
     draggable: false,
@@ -506,20 +503,10 @@ async function experimentInit() {
     editable: true,
     multiline: true,
     anchor: 'center',
-    depth: -1.0 
+    depth: 0.0 
   });
   
-  text_6 = new visual.TextStim({
-    win: psychoJS.window,
-    name: 'text_6',
-    text: 'Введите номер строки для получения баллов. \n\nНажмите "пробел", чтобы завершить.',
-    font: 'Arial',
-    units: undefined, 
-    pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
-    languageStyle: 'LTR',
-    color: new util.Color('white'),  opacity: undefined,
-    depth: -2.0 
-  });
+  gp_key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
   // Initialize components for Routine "thanks"
   thanksClock = new util.Clock();
@@ -2713,18 +2700,17 @@ function Get_pointsRoutineBegin(snapshot) {
         routineTimer.reset();
         Get_pointsMaxDurationReached = false;
         // update component parameters for each repeat
+        textbox.setText('Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:');
+        textbox.refresh();
         gp_key_resp.keys = undefined;
         gp_key_resp.rt = undefined;
         _gp_key_resp_allKeys = [];
-        get_textbox.setText('');
-        get_textbox.refresh();
         psychoJS.experiment.addData('Get_points.started', globalClock.getTime());
         Get_pointsMaxDuration = null
         // keep track of which components have finished
         Get_pointsComponents = [];
+        Get_pointsComponents.push(textbox);
         Get_pointsComponents.push(gp_key_resp);
-        Get_pointsComponents.push(get_textbox);
-        Get_pointsComponents.push(text_6);
         
         Get_pointsComponents.forEach( function(thisComponent) {
           if ('status' in thisComponent)
@@ -2743,8 +2729,23 @@ function Get_pointsRoutineEachFrame() {
         frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
         // update/draw components on each frame
         
+        // *textbox* updates
+        if (t >= 0.0 && textbox.status === PsychoJS.Status.NOT_STARTED) {
+          // keep track of start time/frame for later
+          textbox.tStart = t;  // (not accounting for frame time here)
+          textbox.frameNStart = frameN;  // exact frame index
+          
+          textbox.setAutoDraw(true);
+        }
+        
+        
+        // if textbox is active this frame...
+        if (textbox.status === PsychoJS.Status.STARTED) {
+        }
+        
+        
         // *gp_key_resp* updates
-        if (t >= 0.0 && gp_key_resp.status === PsychoJS.Status.NOT_STARTED) {
+        if (t >= 3.0 && gp_key_resp.status === PsychoJS.Status.NOT_STARTED) {
           // keep track of start time/frame for later
           gp_key_resp.tStart = t;  // (not accounting for frame time here)
           gp_key_resp.frameNStart = frameN;  // exact frame index
@@ -2766,36 +2767,6 @@ function Get_pointsRoutineEachFrame() {
             // a response ends the routine
             continueRoutine = false;
           }
-        }
-        
-        
-        // *get_textbox* updates
-        if (t >= 0.0 && get_textbox.status === PsychoJS.Status.NOT_STARTED) {
-          // keep track of start time/frame for later
-          get_textbox.tStart = t;  // (not accounting for frame time here)
-          get_textbox.frameNStart = frameN;  // exact frame index
-          
-          get_textbox.setAutoDraw(true);
-        }
-        
-        
-        // if get_textbox is active this frame...
-        if (get_textbox.status === PsychoJS.Status.STARTED) {
-        }
-        
-        
-        // *text_6* updates
-        if (t >= 0.0 && text_6.status === PsychoJS.Status.NOT_STARTED) {
-          // keep track of start time/frame for later
-          text_6.tStart = t;  // (not accounting for frame time here)
-          text_6.frameNStart = frameN;  // exact frame index
-          
-          text_6.setAutoDraw(true);
-        }
-        
-        
-        // if text_6 is active this frame...
-        if (text_6.status === PsychoJS.Status.STARTED) {
         }
         
         // check for quit (typically the Esc key)
@@ -2834,20 +2805,9 @@ function Get_pointsRoutineEnd(snapshot) {
             thisComponent.setAutoDraw(false);
           }
         });
+        psychoJS.experiment.addData('textbox.text',textbox.text)
         psychoJS.experiment.addData('Get_points.stopped', globalClock.getTime());
-        // update the trial handler
-        if (currentLoop instanceof MultiStairHandler) {
-          currentLoop.addResponse(gp_key_resp.corr, level);
-        }
-        psychoJS.experiment.addData('gp_key_resp.keys', gp_key_resp.keys);
-        if (typeof gp_key_resp.keys !== 'undefined') {  // we had a response
-            psychoJS.experiment.addData('gp_key_resp.rt', gp_key_resp.rt);
-            psychoJS.experiment.addData('gp_key_resp.duration', gp_key_resp.duration);
-            routineTimer.reset();
-            }
-        
         gp_key_resp.stop();
-        psychoJS.experiment.addData('get_textbox.text',get_textbox.text)
         // the Routine "Get_points" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset();
         
