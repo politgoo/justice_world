@@ -194,6 +194,7 @@ var mean_rt;
 var text_5;
 var key_resp_2;
 var Get_pointsClock;
+var text_6;
 var textbox;
 var gp_key_resp;
 var thanksClock;
@@ -488,11 +489,23 @@ async function experimentInit() {
   
   // Initialize components for Routine "Get_points"
   Get_pointsClock = new util.Clock();
+  text_6 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_6',
+    text: 'Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0.2], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
   textbox = new visual.TextBox({
     win: psychoJS.window,
     name: 'textbox',
-    text: ' - введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
-    placeholder: 'Поле ввода:',
+    text: '',
+    placeholder: undefined,
     font: 'Arial',
     pos: [0, 0], 
     draggable: false,
@@ -511,7 +524,7 @@ async function experimentInit() {
     editable: true,
     multiline: true,
     anchor: 'center',
-    depth: 0.0 
+    depth: -1.0 
   });
   
   gp_key_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -2692,7 +2705,7 @@ function Get_pointsRoutineBegin(snapshot) {
         routineTimer.reset();
         Get_pointsMaxDurationReached = false;
         // update component parameters for each repeat
-        textbox.setText(' - введите номер строки для учета баллов. Затем нажмите на пробел для завершения:');
+        textbox.setText('');
         textbox.refresh();
         gp_key_resp.keys = undefined;
         gp_key_resp.rt = undefined;
@@ -2701,6 +2714,7 @@ function Get_pointsRoutineBegin(snapshot) {
         Get_pointsMaxDuration = null
         // keep track of which components have finished
         Get_pointsComponents = [];
+        Get_pointsComponents.push(text_6);
         Get_pointsComponents.push(textbox);
         Get_pointsComponents.push(gp_key_resp);
         
@@ -2719,6 +2733,21 @@ function Get_pointsRoutineEachFrame() {
         t = Get_pointsClock.getTime();
         frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
         // update/draw components on each frame
+        
+        // *text_6* updates
+        if (t >= 0.0 && text_6.status === PsychoJS.Status.NOT_STARTED) {
+          // keep track of start time/frame for later
+          text_6.tStart = t;  // (not accounting for frame time here)
+          text_6.frameNStart = frameN;  // exact frame index
+          
+          text_6.setAutoDraw(true);
+        }
+        
+        
+        // if text_6 is active this frame...
+        if (text_6.status === PsychoJS.Status.STARTED) {
+        }
+        
         
         // *textbox* updates
         if (t >= 0.0 && textbox.status === PsychoJS.Status.NOT_STARTED) {

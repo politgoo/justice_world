@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 18:57:55 2025
+    on Tue Dec 30 19:12:07 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -270,6 +270,12 @@ def setupDevices(expInfo, thisExp, win):
         deviceManager.addDevice(
             deviceClass='keyboard', deviceName='defaultKeyboard', backend='iohub'
         )
+    if deviceManager.getDevice('gp_key_resp') is None:
+        # initialise gp_key_resp
+        gp_key_resp = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='gp_key_resp',
+        )
     if deviceManager.getDevice('main_instr_key') is None:
         # initialise main_instr_key
         main_instr_key = deviceManager.addDevice(
@@ -317,12 +323,6 @@ def setupDevices(expInfo, thisExp, win):
         key_resp_2 = deviceManager.addDevice(
             deviceClass='keyboard',
             deviceName='key_resp_2',
-        )
-    if deviceManager.getDevice('gp_key_resp') is None:
-        # initialise gp_key_resp
-        gp_key_resp = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='gp_key_resp',
         )
     # return True if completed successfully
     return True
@@ -430,6 +430,32 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameDur = 1.0 / 60.0  # could not measure, so guess
     
     # Start Code - component code to be run after the window creation
+    
+    # --- Initialize components for Routine "Get_points" ---
+    text_6 = visual.TextStim(win=win, name='text_6',
+        text='Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
+        font='Arial',
+        pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    textbox = visual.TextBox2(
+         win, text=None, placeholder=None, font='Arial',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color='white', colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=True,
+         name='textbox',
+         depth=-1, autoLog=True,
+    )
+    gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
     
     # --- Initialize components for Routine "Main_instr" ---
     main_instr_text = visual.TextStim(win=win, name='main_instr_text',
@@ -602,8 +628,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp_2 = keyboard.Keyboard(deviceName='key_resp_2')
     
     # --- Initialize components for Routine "Get_points" ---
+    text_6 = visual.TextStim(win=win, name='text_6',
+        text='Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:',
+        font='Arial',
+        pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     textbox = visual.TextBox2(
-         win, text='Введите номер строки для учета баллов. Затем нажмите на пробел для завершения:', placeholder='Поле ввода:', font='Arial',
+         win, text=None, placeholder=None, font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
@@ -616,7 +649,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=True,
          name='textbox',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
     
@@ -656,6 +689,160 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     expInfo['expStart'] = data.getDateStr(
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
+    
+    # --- Prepare to start Routine "Get_points" ---
+    # create an object to store info about Routine Get_points
+    Get_points = data.Routine(
+        name='Get_points',
+        components=[text_6, textbox, gp_key_resp],
+    )
+    Get_points.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    textbox.reset()
+    # create starting attributes for gp_key_resp
+    gp_key_resp.keys = []
+    gp_key_resp.rt = []
+    _gp_key_resp_allKeys = []
+    # store start times for Get_points
+    Get_points.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    Get_points.tStart = globalClock.getTime(format='float')
+    Get_points.status = STARTED
+    thisExp.addData('Get_points.started', Get_points.tStart)
+    Get_points.maxDuration = None
+    # keep track of which components have finished
+    Get_pointsComponents = Get_points.components
+    for thisComponent in Get_points.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "Get_points" ---
+    Get_points.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *text_6* updates
+        
+        # if text_6 is starting this frame...
+        if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_6.frameNStart = frameN  # exact frame index
+            text_6.tStart = t  # local t and not account for scr refresh
+            text_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_6.started')
+            # update status
+            text_6.status = STARTED
+            text_6.setAutoDraw(True)
+        
+        # if text_6 is active this frame...
+        if text_6.status == STARTED:
+            # update params
+            pass
+        
+        # *textbox* updates
+        
+        # if textbox is starting this frame...
+        if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            textbox.frameNStart = frameN  # exact frame index
+            textbox.tStart = t  # local t and not account for scr refresh
+            textbox.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'textbox.started')
+            # update status
+            textbox.status = STARTED
+            textbox.setAutoDraw(True)
+        
+        # if textbox is active this frame...
+        if textbox.status == STARTED:
+            # update params
+            pass
+        
+        # *gp_key_resp* updates
+        waitOnFlip = False
+        
+        # if gp_key_resp is starting this frame...
+        if gp_key_resp.status == NOT_STARTED and tThisFlip >= 3.0-frameTolerance:
+            # keep track of start time/frame for later
+            gp_key_resp.frameNStart = frameN  # exact frame index
+            gp_key_resp.tStart = t  # local t and not account for scr refresh
+            gp_key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(gp_key_resp, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            gp_key_resp.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(gp_key_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(gp_key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if gp_key_resp.status == STARTED and not waitOnFlip:
+            theseKeys = gp_key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _gp_key_resp_allKeys.extend(theseKeys)
+            if len(_gp_key_resp_allKeys):
+                gp_key_resp.keys = _gp_key_resp_allKeys[-1].name  # just the last key pressed
+                gp_key_resp.rt = _gp_key_resp_allKeys[-1].rt
+                gp_key_resp.duration = _gp_key_resp_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=Get_points,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            Get_points.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in Get_points.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "Get_points" ---
+    for thisComponent in Get_points.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for Get_points
+    Get_points.tStop = globalClock.getTime(format='float')
+    Get_points.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('Get_points.stopped', Get_points.tStop)
+    thisExp.addData('textbox.text',textbox.text)
+    thisExp.nextEntry()
+    # the Routine "Get_points" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "Main_instr" ---
     # create an object to store info about Routine Main_instr
@@ -2733,7 +2920,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine Get_points
     Get_points = data.Routine(
         name='Get_points',
-        components=[textbox, gp_key_resp],
+        components=[text_6, textbox, gp_key_resp],
     )
     Get_points.status = NOT_STARTED
     continueRoutine = True
@@ -2772,6 +2959,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *text_6* updates
+        
+        # if text_6 is starting this frame...
+        if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text_6.frameNStart = frameN  # exact frame index
+            text_6.tStart = t  # local t and not account for scr refresh
+            text_6.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text_6.started')
+            # update status
+            text_6.status = STARTED
+            text_6.setAutoDraw(True)
+        
+        # if text_6 is active this frame...
+        if text_6.status == STARTED:
+            # update params
+            pass
         
         # *textbox* updates
         
