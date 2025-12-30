@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 17:12:37 2025
+    on Tue Dec 30 17:42:50 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -24,6 +24,7 @@ from psychopy.constants import (
     RELEASED, FOREVER, priority
 )
 
+import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
 from numpy.random import random, randint, normal, shuffle, choice as randchoice
@@ -561,7 +562,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     corr_sum = 0
     all_rt = []
     SD_rt = []
-    
+    np = None
     text_fb_task = visual.TextStim(win=win, name='text_fb_task',
         text='',
         font='Arial',
@@ -603,7 +604,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "Get_points" ---
     gp_key_resp = keyboard.Keyboard(deviceName='gp_key_resp')
     get_textbox = visual.TextBox2(
-         win, text='Введите номер строки для получения баллов. \n\nНажмите "пробел", чтобы завершить.\n\n', placeholder='Поле ввода:', font='Arial',
+         win, text='Введите номер строки для получения баллов. Нажмите "пробел", чтобы завершить.\n\n', placeholder='Поле ввода:', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
