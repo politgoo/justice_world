@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Tue Dec 30 16:13:50 2025
+    on Tue Dec 30 17:12:37 2025
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -24,7 +24,6 @@ from psychopy.constants import (
     RELEASED, FOREVER, priority
 )
 
-import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
 from numpy.random import random, randint, normal, shuffle, choice as randchoice
@@ -66,7 +65,7 @@ or run the experiment with `--pilot` as an argument. To change what pilot
 PILOTING = core.setPilotModeFromArgs()
 # start off with values from experiment settings
 _fullScr = True
-_winSize = [1536, 960]
+_winSize = [1710, 1107]
 # if in pilot mode, apply overrides according to preferences
 if PILOTING:
     # force windowed mode
@@ -2323,10 +2322,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         fb_task.tStopRefresh = tThisFlipGlobal
         thisExp.addData('fb_task.stopped', fb_task.tStop)
         # Run 'End Routine' code from code_4
-        #mean_rt = np.mean(all_rt)
-        #sd_rt = np.std(all_rt)
-        
-        # manually count same mean_rt, sd_rt
         mean_rt = sum(all_rt) / len(all_rt)
         tmp = 0.0
         for x in all_rt:
