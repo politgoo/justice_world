@@ -102,7 +102,7 @@ psychoJS.start({
     // resources:
     {'name': 'BJW.xlsx', 'path': 'BJW.xlsx'},
     {'name': 'trening2.xlsx', 'path': 'trening2.xlsx'},
-    {'name': 'tab_task_4.xlsx', 'path': 'tab_task_4.xlsx'},
+    {'name': 'task_m_s4.xlsx', 'path': 'task_m_s4.xlsx'},
     {'name': 'tabl_sl.xlsx', 'path': 'tabl_sl.xlsx'},
   ]
 });
@@ -978,9 +978,9 @@ function loop_LLoopBegin(loop_LLoopScheduler, snapshot) {
     // set up handler to look after randomisation of conditions etc
     loop_L = new TrialHandler({
       psychoJS: psychoJS,
-      nReps: 1, method: TrialHandler.Method.FULLRANDOM,
+      nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
       extraInfo: expInfo, originPath: undefined,
-      trialList: 'tab_task_4.xlsx',
+      trialList: 'task_m_s4.xlsx',
       seed: undefined, name: 'loop_L'
     });
     psychoJS.experiment.addLoop(loop_L); // add the loop to the experiment
@@ -2834,8 +2834,8 @@ function Get_pointsRoutineEnd(snapshot) {
             thisComponent.setAutoDraw(false);
           }
         });
-        psychoJS.experiment.addData('textbox.text',textbox.text)
         psychoJS.experiment.addData('Get_points.stopped', globalClock.getTime());
+        psychoJS.experiment.addData('textbox.text',textbox.text)
         gp_key_resp.stop();
         // the Routine "Get_points" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset();
