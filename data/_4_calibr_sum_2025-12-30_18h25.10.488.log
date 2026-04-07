@@ -1,0 +1,1340 @@
+9.9468 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+10.0365 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+528.8796 	INFO 	Loaded monitor calibration from ['2025_10_28 18:09']
+528.9880 	INFO 	Using renderer 'Apple M4' for graphics
+528.9880 	INFO 	OpenGL version supported by driver is 2..
+529.0103 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x15bbda8f0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x15bbda890>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-0.2314, -0.2314, -0.2314]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x15d604b80>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([3420, 2214]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+529.0103 	EXP 	window1: backgroundImage = ''
+529.0103 	EXP 	window1: backgroundFit = 'none'
+529.2716 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+529.2716 	EXP 	window1: recordFrameIntervals = False
+529.4685 	EXP 	window1: recordFrameIntervals = True
+529.7622 	EXP 	Screen (0) actual frame rate measured at 120.94Hz
+529.7623 	EXP 	window1: recordFrameIntervals = False
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9389 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9390 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9390 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9390 	INFO 	keyboard.Keyboard is using iohub backend.
+531.9390 	EXP 	4_calibr_sum: status = STARTED
+531.9688 	EXP 	Created main_instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='main_instr_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+531.9759 	EXP 	Created BJW_inst_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='BJW_inst_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0402 	EXP 	Created BJW_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=True, font='Open Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.02), labelWrapWidth=None, labels=list(...), lineColor=None, markerColor=None, name='BJW_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=3, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='height', win=Window(...))
+532.0407 	EXP 	Created BJW_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='BJW_text', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.0459 	EXP 	Created text_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_instr', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0494 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0499 	EXP 	Created pol_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='pol_1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+532.0505 	EXP 	Created pol_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='pol_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+532.0545 	EXP 	Created text_tren = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.030000000000000002), italic=False, languageStyle='LTR', name='text_tren', opacity=1, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0548 	EXP 	Created text_fb_tren = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_fb_tren', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.0572 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0577 	EXP 	Created sq_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='sq_1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+532.0582 	EXP 	Created sq_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='sq_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+532.0599 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.030000000000000002), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+532.0602 	EXP 	Created text_fb_task = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_fb_task', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.0969 	EXP 	Created sl_h = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=True, font='Open Sans', granularity=0.0, labelColor=None, labelHeight=np.float64(0.030000000000000002), labelWrapWidth=None, labels=['совсем нет', 'очень'], lineColor=None, markerColor=None, name='sl_h', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+532.0973 	EXP 	Created text_sl = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_sl', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.0978 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.1373 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_6', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+532.1440 	EXP 	Created text_th = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_th', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Спасибо за участие!\n', units='height', win=Window(...), wrapWidth=1)
+0.0325 	EXP 	BJW_slider: autoLog = True
+0.0325 	EXP 	BJW_slider: styleTweaks = []
+0.0325 	EXP 	BJW_slider: styleTweaks = []
+0.0325 	EXP 	BJW_slider: styleTweaks = []
+0.0325 	EXP 	BJW_slider: styleTweaks = []
+0.0325 	EXP 	BJW_slider: contrast = 1.0
+0.0325 	EXP 	BJW_slider: markerPos = 3
+0.0325 	EXP 	BJW_slider: autoLog = True
+0.0325 	EXP 	sl_h: autoLog = True
+0.0325 	EXP 	sl_h: styleTweaks = []
+0.0325 	EXP 	sl_h: styleTweaks = []
+0.0325 	EXP 	sl_h: styleTweaks = []
+0.0325 	EXP 	sl_h: styleTweaks = []
+0.0325 	EXP 	sl_h: contrast = 1.0
+0.0325 	EXP 	sl_h: markerPos = 5
+0.0325 	EXP 	sl_h: autoLog = True
+0.0325 	EXP 	get_textbox: autoLog = True
+0.0410 	INFO 	Keyboard events cleared
+0.0408 	EXP 	main_instr_text: autoDraw = True
+1.0005 	EXP 	Device response: <KeyPress from None: t=0.9677941250265576, value=space, duration=None>
+1.0095 	INFO 	Keyboard events cleared
+1.0093 	EXP 	main_instr_text: autoDraw = False
+1.0093 	EXP 	BJW_inst_text: autoDraw = True
+1.0213 	DATA 	Keypress: space
+1.0385 	EXP 	Device response: <KeyPress from None: t=0.9677941250265576, value=space, duration=0.06325874995673075>
+1.3398 	EXP 	Device response: <KeyPress from None: t=1.3348673330037855, value=space, duration=None>
+1.3485 	EXP 	Imported BJW.xlsx as conditions, 13 conditions, 1 params
+1.3493 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'Text': 'Я считаю, что, по большому счету, заслуживаю того, что происходит со мной.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+1.3658 	DATA 	Keypress: space
+1.3895 	EXP 	BJW_inst_text: autoDraw = False
+1.3895 	EXP 	BJW_slider: markerPos = None
+1.3895 	EXP 	BJW_slider: markerPos = 3
+1.3895 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+1.3895 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+1.3895 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+1.3895 	EXP 	BJW_text: text = 'Я считаю, что, по большому счету, заслуживаю того, что происходит со мной.'
+1.3895 	EXP 	BJW_slider: autoDraw = True
+1.3895 	EXP 	BJW_text: autoDraw = True
+1.4354 	EXP 	Device response: <KeyPress from None: t=1.3348673330037855, value=space, duration=0.09301420900737867>
+2.2693 	DATA 	Mouse: Left button down, pos=(1076,132)
+2.2782 	EXP 	BJW_slider: markerPos = np.float64(3.7985546522131886)
+2.2871 	EXP 	BJW_slider: markerPos = np.float64(3.7985546522131886)
+2.3014 	EXP 	BJW_slider: markerPos = np.float64(3.7985546522131886)
+2.3104 	EXP 	BJW_slider: markerPos = np.float64(3.7985546522131886)
+2.3348 	EXP 	BJW_slider: markerPos = np.float64(3.8021680216802167)
+2.3432 	EXP 	BJW_slider: markerPos = np.float64(3.8021680216802167)
+2.3436 	DATA 	Mouse:  Left button up, pos=(1077,131)
+2.3666 	EXP 	BJW_slider: markerPos = 4.0
+2.3671 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'Text': 'Как правило, жизнь ко\xa0мне справедлива.', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+2.3847 	EXP 	BJW_slider: autoDraw = False
+2.3847 	EXP 	BJW_text: autoDraw = False
+2.3847 	EXP 	BJW_slider: markerPos = None
+2.3847 	EXP 	BJW_slider: markerPos = 3
+2.3847 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.3847 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.3847 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.3847 	EXP 	BJW_text: text = 'Как правило, жизнь ко\xa0мне справедлива.'
+2.3847 	EXP 	BJW_slider: autoDraw = True
+2.3847 	EXP 	BJW_text: autoDraw = True
+2.5679 	DATA 	Mouse: Left button down, pos=(752,125)
+2.5846 	EXP 	BJW_slider: markerPos = np.float64(2.6278229448961157)
+2.5935 	EXP 	BJW_slider: markerPos = np.float64(2.6278229448961157)
+2.6171 	EXP 	BJW_slider: markerPos = np.float64(2.6278229448961157)
+2.6347 	EXP 	BJW_slider: markerPos = np.float64(2.6278229448961157)
+2.6391 	DATA 	Mouse:  Left button up, pos=(752,125)
+2.6447 	EXP 	BJW_slider: markerPos = np.float64(2.6278229448961157)
+2.6550 	EXP 	BJW_slider: markerPos = 3.0
+2.6554 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'Text': 'Я верю, что обычно получаю то, что заслуживаю.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+2.6685 	EXP 	BJW_slider: autoDraw = False
+2.6685 	EXP 	BJW_text: autoDraw = False
+2.6685 	EXP 	BJW_slider: markerPos = None
+2.6685 	EXP 	BJW_slider: markerPos = 3
+2.6685 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.6685 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.6685 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.6685 	EXP 	BJW_text: text = 'Я верю, что обычно получаю то, что заслуживаю.'
+2.6685 	EXP 	BJW_slider: autoDraw = True
+2.6685 	EXP 	BJW_text: autoDraw = True
+2.8211 	DATA 	Mouse: Left button down, pos=(643,111)
+2.8348 	EXP 	BJW_slider: markerPos = np.float64(2.233965672990063)
+2.8449 	EXP 	BJW_slider: markerPos = np.float64(2.233965672990063)
+2.8549 	EXP 	BJW_slider: markerPos = np.float64(2.2267389340560073)
+2.8682 	EXP 	BJW_slider: markerPos = np.float64(2.223125564588979)
+2.8769 	EXP 	BJW_slider: markerPos = np.float64(2.223125564588979)
+2.9012 	EXP 	BJW_slider: markerPos = np.float64(2.223125564588979)
+2.9016 	DATA 	Mouse:  Left button up, pos=(640,110)
+2.9181 	EXP 	BJW_slider: markerPos = 2.0
+2.9190 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'Text': 'В моей жизни в\xa0общем и\xa0целом всё происходит справедливо.', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+2.9354 	EXP 	BJW_slider: autoDraw = False
+2.9354 	EXP 	BJW_text: autoDraw = False
+2.9354 	EXP 	BJW_slider: markerPos = None
+2.9354 	EXP 	BJW_slider: markerPos = 3
+2.9354 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.9354 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.9354 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+2.9354 	EXP 	BJW_text: text = 'В моей жизни в\xa0общем и\xa0целом всё происходит справедливо.'
+2.9354 	EXP 	BJW_slider: autoDraw = True
+2.9354 	EXP 	BJW_text: autoDraw = True
+3.0122 	DATA 	Mouse: Left button down, pos=(637,108)
+3.0225 	EXP 	BJW_slider: markerPos = np.float64(2.212285456187895)
+3.0344 	EXP 	BJW_slider: markerPos = np.float64(2.205058717253839)
+3.0450 	EXP 	BJW_slider: markerPos = np.float64(2.205058717253839)
+3.0546 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.0681 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.0770 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.0871 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.0879 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.1018 	EXP 	BJW_slider: markerPos = 2.0
+3.1024 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'Text': 'В моей жизни несправедливость – скорее исключение, чем правило.', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+3.1143 	EXP 	BJW_slider: autoDraw = False
+3.1143 	EXP 	BJW_text: autoDraw = False
+3.1143 	EXP 	BJW_slider: markerPos = None
+3.1143 	EXP 	BJW_slider: markerPos = 3
+3.1143 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.1143 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.1143 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.1143 	EXP 	BJW_text: text = 'В моей жизни несправедливость – скорее исключение, чем правило.'
+3.1143 	EXP 	BJW_slider: autoDraw = True
+3.1143 	EXP 	BJW_text: autoDraw = True
+3.1715 	DATA 	Mouse: Left button down, pos=(633,105)
+3.1843 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.1930 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2026 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2107 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2193 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2339 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2418 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2503 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.2506 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.2584 	EXP 	BJW_slider: markerPos = 2.0
+3.2588 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'Text': 'Я считаю, что в\xa0целом в\xa0моей жизни всё справедливо.', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+3.2839 	EXP 	BJW_slider: autoDraw = False
+3.2839 	EXP 	BJW_text: autoDraw = False
+3.2839 	EXP 	BJW_slider: markerPos = None
+3.2839 	EXP 	BJW_slider: markerPos = 3
+3.2839 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.2839 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.2839 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.2839 	EXP 	BJW_text: text = 'Я считаю, что в\xa0целом в\xa0моей жизни всё справедливо.'
+3.2839 	EXP 	BJW_slider: autoDraw = True
+3.2839 	EXP 	BJW_text: autoDraw = True
+3.3298 	DATA 	Mouse: Left button down, pos=(633,105)
+3.3438 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.3541 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.3678 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.3775 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.3815 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.3874 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.4012 	EXP 	BJW_slider: markerPos = 2.0
+3.4016 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'Text': 'Я думаю, что важные решения, которые касаются меня, обычно справедливы.', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+3.4128 	EXP 	BJW_slider: autoDraw = False
+3.4128 	EXP 	BJW_text: autoDraw = False
+3.4128 	EXP 	BJW_slider: markerPos = None
+3.4128 	EXP 	BJW_slider: markerPos = 3
+3.4128 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.4128 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.4128 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.4128 	EXP 	BJW_text: text = 'Я думаю, что важные решения, которые касаются меня, обычно справедливы.'
+3.4128 	EXP 	BJW_slider: autoDraw = True
+3.4128 	EXP 	BJW_text: autoDraw = True
+3.4638 	DATA 	Mouse: Left button down, pos=(633,105)
+3.4839 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.4923 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.5010 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.5091 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.5177 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.5181 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.5257 	EXP 	BJW_slider: markerPos = 2.0
+3.5261 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'Text': 'Я считаю, что в\xa0целом мир справедлив.', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+3.5500 	EXP 	BJW_slider: autoDraw = False
+3.5500 	EXP 	BJW_text: autoDraw = False
+3.5500 	EXP 	BJW_slider: markerPos = None
+3.5500 	EXP 	BJW_slider: markerPos = 3
+3.5500 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.5500 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.5500 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.5500 	EXP 	BJW_text: text = 'Я считаю, что в\xa0целом мир справедлив.'
+3.5500 	EXP 	BJW_slider: autoDraw = True
+3.5500 	EXP 	BJW_text: autoDraw = True
+3.6086 	DATA 	Mouse: Left button down, pos=(633,105)
+3.6183 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.6270 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.6363 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.6508 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.6512 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.6595 	EXP 	BJW_slider: markerPos = 2.0
+3.6599 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'Text': 'Я считаю, что, по\xa0большому счету, люди получают то, что заслуживают.', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+3.6702 	EXP 	BJW_slider: autoDraw = False
+3.6702 	EXP 	BJW_text: autoDraw = False
+3.6702 	EXP 	BJW_slider: markerPos = None
+3.6702 	EXP 	BJW_slider: markerPos = 3
+3.6702 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.6702 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.6702 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.6702 	EXP 	BJW_text: text = 'Я считаю, что, по\xa0большому счету, люди получают то, что заслуживают.'
+3.6702 	EXP 	BJW_slider: autoDraw = True
+3.6702 	EXP 	BJW_text: autoDraw = True
+3.7420 	DATA 	Mouse: Left button down, pos=(633,105)
+3.7504 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.7582 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.7668 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.7743 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.7827 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.7830 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.7904 	EXP 	BJW_slider: markerPos = 2.0
+3.7908 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'Text': 'Я уверен, что справедливость всегда побеждает несправедливость.', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+3.8004 	EXP 	BJW_slider: autoDraw = False
+3.8004 	EXP 	BJW_text: autoDraw = False
+3.8004 	EXP 	BJW_slider: markerPos = None
+3.8004 	EXP 	BJW_slider: markerPos = 3
+3.8004 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.8004 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.8004 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.8004 	EXP 	BJW_text: text = 'Я уверен, что справедливость всегда побеждает несправедливость.'
+3.8004 	EXP 	BJW_slider: autoDraw = True
+3.8004 	EXP 	BJW_text: autoDraw = True
+3.8702 	DATA 	Mouse: Left button down, pos=(633,105)
+3.8836 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.8910 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.8993 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.9066 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.9167 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.9241 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+3.9244 	DATA 	Mouse:  Left button up, pos=(633,105)
+3.9330 	EXP 	BJW_slider: markerPos = 2.0
+3.9334 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'Text': 'Я убежден, что, если человек пережил несправедливость, в\xa0будущем это возместится.', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+3.9427 	EXP 	BJW_slider: autoDraw = False
+3.9427 	EXP 	BJW_text: autoDraw = False
+3.9427 	EXP 	BJW_slider: markerPos = None
+3.9427 	EXP 	BJW_slider: markerPos = 3
+3.9427 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.9427 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.9427 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+3.9427 	EXP 	BJW_text: text = 'Я убежден, что, если человек пережил несправедливость, в\xa0будущем это возместится.'
+3.9427 	EXP 	BJW_slider: autoDraw = True
+3.9427 	EXP 	BJW_text: autoDraw = True
+4.0006 	DATA 	Mouse: Left button down, pos=(633,105)
+4.0081 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0170 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0245 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0330 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0405 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0495 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0529 	DATA 	Mouse:  Left button up, pos=(633,105)
+4.0572 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.0660 	EXP 	BJW_slider: markerPos = 2.0
+4.0664 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'Text': 'Я твердо уверен, что несправедливость в\xa0самых разных жизненных ситуациях (в семье, учебе и\xa0т. д.) – скорее исключение, чем правило.', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+4.0767 	EXP 	BJW_slider: autoDraw = False
+4.0767 	EXP 	BJW_text: autoDraw = False
+4.0767 	EXP 	BJW_slider: markerPos = None
+4.0767 	EXP 	BJW_slider: markerPos = 3
+4.0767 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.0767 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.0767 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.0767 	EXP 	BJW_text: text = 'Я твердо уверен, что несправедливость в\xa0самых разных жизненных ситуациях (в семье, учебе и\xa0т. д.) – скорее исключение, чем правило.'
+4.0767 	EXP 	BJW_slider: autoDraw = True
+4.0767 	EXP 	BJW_text: autoDraw = True
+4.1199 	DATA 	Mouse: Left button down, pos=(633,105)
+4.1336 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1411 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1494 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1567 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1668 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1743 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1828 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.1861 	DATA 	Mouse:  Left button up, pos=(633,105)
+4.1906 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.2002 	EXP 	BJW_slider: markerPos = 2.0
+4.2006 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'Text': 'Я думаю, что все, кто принимает важные решения, стремятся быть справедливыми.', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+4.2097 	EXP 	BJW_slider: autoDraw = False
+4.2097 	EXP 	BJW_text: autoDraw = False
+4.2097 	EXP 	BJW_slider: markerPos = None
+4.2097 	EXP 	BJW_slider: markerPos = 3
+4.2097 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.2097 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.2097 	EXP 	BJW_text: height = np.float64(0.030000000000000002)
+4.2097 	EXP 	BJW_text: text = 'Я думаю, что все, кто принимает важные решения, стремятся быть справедливыми.'
+4.2097 	EXP 	BJW_slider: autoDraw = True
+4.2097 	EXP 	BJW_text: autoDraw = True
+4.2606 	DATA 	Mouse: Left button down, pos=(633,105)
+4.2736 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.2837 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.2911 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.2998 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3072 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3160 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3235 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3326 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3399 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3432 	DATA 	Mouse:  Left button up, pos=(633,105)
+4.3503 	EXP 	BJW_slider: markerPos = np.float64(2.1978319783197833)
+4.3576 	EXP 	BJW_slider: markerPos = 2.0
+4.3669 	EXP 	BJW_slider: autoDraw = False
+4.3669 	EXP 	BJW_text: autoDraw = False
+4.3669 	EXP 	text_instr: autoDraw = True
+4.4180 	DATA 	Mouse: Left button down, pos=(633,105)
+4.4860 	DATA 	Mouse:  Left button up, pos=(633,105)
+4.5526 	DATA 	Mouse: Left button down, pos=(633,105)
+4.6218 	DATA 	Mouse:  Left button up, pos=(633,105)
+4.8202 	EXP 	Device response: <KeyPress from None: t=4.812659416988026, value=space, duration=None>
+4.8245 	DATA 	Keypress: space
+4.8310 	INFO 	Keyboard events cleared
+4.8305 	EXP 	text_instr: autoDraw = False
+4.8305 	EXP 	text_3: autoDraw = True
+4.8918 	EXP 	Device response: <KeyPress from None: t=4.812659416988026, value=space, duration=0.07615795801393688>
+5.1858 	EXP 	Device response: <KeyPress from None: t=5.175793375005014, value=space, duration=None>
+5.1926 	EXP 	Imported trening2.xlsx as conditions, 7 conditions, 12 params
+5.1930 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'w1': 0.24, 'w2': 0.25, 'corr_answ': 'right', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 0, 'or2': 45, 'time': 1.5, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.1983 	DATA 	Keypress: space
+5.2048 	EXP 	text_3: autoDraw = False
+5.2048 	EXP 	pol_1: ori = np.float64(0.0)
+5.2048 	EXP 	pol_2: ori = np.float64(45.0)
+5.2048 	EXP 	pol_1: autoDraw = True
+5.2048 	EXP 	pol_2: autoDraw = True
+5.2048 	EXP 	text_tren: autoDraw = True
+5.2693 	EXP 	Device response: <KeyPress from None: t=5.175793375005014, value=space, duration=0.0854377499781549>
+6.3287 	EXP 	Device response: <KeyPress from None: t=6.324251791986171, value=right, duration=None>
+6.3651 	DATA 	Keypress: right
+6.3717 	EXP 	pol_1: autoDraw = False
+6.3717 	EXP 	pol_2: autoDraw = False
+6.3717 	EXP 	text_tren: autoDraw = False
+6.3717 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+6.3717 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+6.3717 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+6.3717 	EXP 	text_fb_tren: text = 'Верно!'
+6.3717 	EXP 	text_fb_tren: autoDraw = True
+6.4084 	EXP 	Device response: <KeyPress from None: t=6.324251791986171, value=right, duration=0.08328441600315273>
+6.6381 	EXP 	Device response: <KeyPress from None: t=6.629717500007246, value=right, duration=None>
+6.6399 	DATA 	Keypress: right
+6.7377 	EXP 	Device response: <KeyPress from None: t=6.629717500007246, value=right, duration=0.10570070799440145>
+6.8352 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'w1': 0.22, 'w2': 0.21, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.8, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 45, 'or2': 5, 'time': 1.0, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+6.8468 	EXP 	text_fb_tren: autoDraw = False
+6.8468 	EXP 	pol_1: ori = np.float64(45.0)
+6.8468 	EXP 	pol_2: ori = np.float64(5.0)
+6.8468 	EXP 	pol_1: autoDraw = True
+6.8468 	EXP 	pol_2: autoDraw = True
+6.8468 	EXP 	text_tren: autoDraw = True
+7.0102 	EXP 	Device response: <KeyPress from None: t=7.00642633298412, value=right, duration=None>
+7.0167 	DATA 	Keypress: right
+7.0239 	EXP 	pol_1: autoDraw = False
+7.0239 	EXP 	pol_2: autoDraw = False
+7.0239 	EXP 	text_tren: autoDraw = False
+7.0239 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+7.0239 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+7.0239 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+7.0239 	EXP 	text_fb_tren: text = 'Увы('
+7.0239 	EXP 	text_fb_tren: autoDraw = True
+7.0875 	EXP 	Device response: <KeyPress from None: t=7.00642633298412, value=right, duration=0.0726555420551449>
+7.5103 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'w1': 0.16, 'w2': 0.15, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.7, 'xPos1': -0.3, 'yPos1': -0.22, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 6, 'or2': 47, 'time': 1.0, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+7.5201 	EXP 	text_fb_tren: autoDraw = False
+7.5201 	EXP 	text_fb_tren: autoDraw = False
+7.5201 	EXP 	pol_1: ori = np.float64(6.0)
+7.5201 	EXP 	pol_2: ori = np.float64(47.0)
+7.5201 	EXP 	pol_1: autoDraw = True
+7.5201 	EXP 	pol_2: autoDraw = True
+7.5201 	EXP 	text_tren: autoDraw = True
+7.5703 	EXP 	Device response: <KeyPress from None: t=7.558142292022239, value=right, duration=None>
+7.5739 	DATA 	Keypress: right
+7.5851 	EXP 	pol_1: autoDraw = False
+7.5851 	EXP 	pol_2: autoDraw = False
+7.5851 	EXP 	text_tren: autoDraw = False
+7.5851 	EXP 	text_fb_tren: text = 'Увы('
+7.5851 	EXP 	text_fb_tren: autoDraw = True
+7.6444 	EXP 	Device response: <KeyPress from None: t=7.558142292022239, value=right, duration=0.08035216596908867>
+8.0692 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'w1': 0.22, 'w2': 0.23, 'corr_answ': 'right', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.2, 'yPos1': 0.15, 'xPos2': 0.2, 'yPos2': -0.18, 'or1': 45, 'or2': 3, 'time': 1.5, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+8.0790 	EXP 	text_fb_tren: autoDraw = False
+8.0790 	EXP 	text_fb_tren: autoDraw = False
+8.0790 	EXP 	pol_1: ori = np.float64(45.0)
+8.0790 	EXP 	pol_2: ori = np.float64(3.0)
+8.0790 	EXP 	pol_1: autoDraw = True
+8.0790 	EXP 	pol_2: autoDraw = True
+8.0790 	EXP 	text_tren: autoDraw = True
+8.0967 	EXP 	Device response: <KeyPress from None: t=8.094891500019003, value=right, duration=None>
+8.1255 	DATA 	Keypress: right
+8.1354 	EXP 	pol_1: autoDraw = False
+8.1354 	EXP 	pol_2: autoDraw = False
+8.1354 	EXP 	text_tren: autoDraw = False
+8.1354 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.1354 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.1354 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.1354 	EXP 	text_fb_tren: text = 'Верно!'
+8.1354 	EXP 	text_fb_tren: autoDraw = True
+8.1921 	EXP 	Device response: <KeyPress from None: t=8.094891500019003, value=right, duration=0.09197612496791407>
+8.6201 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'w1': 0.28, 'w2': 0.27, 'corr_answ': 'left', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 5, 'or2': 45, 'time': 1.5, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+8.6322 	EXP 	text_fb_tren: autoDraw = False
+8.6322 	EXP 	text_fb_tren: autoDraw = False
+8.6322 	EXP 	pol_1: ori = np.float64(5.0)
+8.6322 	EXP 	pol_2: ori = np.float64(45.0)
+8.6322 	EXP 	pol_1: autoDraw = True
+8.6322 	EXP 	pol_2: autoDraw = True
+8.6322 	EXP 	text_tren: autoDraw = True
+8.6448 	EXP 	Device response: <KeyPress from None: t=8.643037333036773, value=right, duration=None>
+8.6506 	DATA 	Keypress: right
+8.6567 	EXP 	pol_1: autoDraw = False
+8.6567 	EXP 	pol_2: autoDraw = False
+8.6567 	EXP 	text_tren: autoDraw = False
+8.6567 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.6567 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.6567 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+8.6567 	EXP 	text_fb_tren: text = 'Увы('
+8.6567 	EXP 	text_fb_tren: autoDraw = True
+8.7274 	EXP 	Device response: <KeyPress from None: t=8.643037333036773, value=right, duration=0.0792662919848226>
+9.1436 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'w1': 0.21, 'w2': 0.22, 'corr_answ': 'right', 'op1': 0.54, 'op2': 0.22, 'xPos1': -0.2, 'yPos1': 0.21, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 37, 'or2': 7, 'time': 1.5, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+9.1681 	EXP 	text_fb_tren: autoDraw = False
+9.1681 	EXP 	text_fb_tren: autoDraw = False
+9.1681 	EXP 	pol_1: ori = np.float64(37.0)
+9.1681 	EXP 	pol_2: ori = np.float64(7.0)
+9.1681 	EXP 	pol_1: autoDraw = True
+9.1681 	EXP 	pol_2: autoDraw = True
+9.1681 	EXP 	text_tren: autoDraw = True
+9.1702 	EXP 	Device response: <KeyPress from None: t=9.147416041989345, value=right, duration=None>
+9.1751 	DATA 	Keypress: right
+9.1852 	EXP 	pol_1: autoDraw = False
+9.1852 	EXP 	pol_2: autoDraw = False
+9.1852 	EXP 	text_tren: autoDraw = False
+9.1852 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.1852 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.1852 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.1852 	EXP 	text_fb_tren: text = 'Верно!'
+9.1852 	EXP 	text_fb_tren: autoDraw = True
+9.2450 	EXP 	Device response: <KeyPress from None: t=9.147416041989345, value=right, duration=0.09628266602521762>
+9.6705 	EXP 	Device response: <KeyPress from None: t=9.666912708024029, value=right, duration=None>
+9.6707 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'w1': 0.17, 'w2': 0.16, 'corr_answ': 'left', 'op1': 0.3, 'op2': 0.18, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 5, 'or2': 45, 'time': 1.0, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+9.6753 	DATA 	Keypress: right
+9.6812 	EXP 	text_fb_tren: autoDraw = False
+9.6812 	EXP 	text_fb_tren: autoDraw = False
+9.6812 	EXP 	pol_1: ori = np.float64(5.0)
+9.6812 	EXP 	pol_2: ori = np.float64(45.0)
+9.6812 	EXP 	pol_1: autoDraw = True
+9.6812 	EXP 	pol_2: autoDraw = True
+9.6812 	EXP 	text_tren: autoDraw = True
+9.6812 	EXP 	pol_1: autoDraw = False
+9.6812 	EXP 	pol_2: autoDraw = False
+9.6812 	EXP 	text_tren: autoDraw = False
+9.6812 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.6812 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.6812 	EXP 	text_fb_tren: height = np.float64(0.030000000000000002)
+9.6812 	EXP 	text_fb_tren: text = 'Увы('
+9.6812 	EXP 	text_fb_tren: autoDraw = True
+9.7622 	EXP 	Device response: <KeyPress from None: t=9.666912708024029, value=right, duration=0.09217970899771899>
+10.1756 	EXP 	text_fb_tren: autoDraw = False
+10.1756 	EXP 	text_fb_tren: autoDraw = False
+10.1756 	EXP 	text_4: autoDraw = True
+10.1764 	EXP 	Device response: <KeyPress from None: t=10.17489491699962, value=right, duration=None>
+10.1871 	DATA 	Keypress: right
+10.2702 	EXP 	Device response: <KeyPress from None: t=10.17489491699962, value=right, duration=0.08757420803885907>
+10.6428 	EXP 	Device response: <KeyPress from None: t=10.64149016700685, value=right, duration=None>
+10.6465 	DATA 	Keypress: right
+10.7184 	EXP 	Device response: <KeyPress from None: t=10.64149016700685, value=right, duration=0.07148879102896899>
+11.0535 	EXP 	Device response: <KeyPress from None: t=11.043347708007786, value=space, duration=None>
+11.0710 	EXP 	Imported tab_task_4.xlsx as conditions, 40 conditions, 12 params
+11.0718 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'w1': 0.21, 'w2': 0.22, 'corr_answ': 'right', 'op1': 0.54, 'op2': 0.22, 'xPos1': -0.2, 'yPos1': 0.21, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 37, 'or2': 7, 'time': 1.5, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+11.0770 	DATA 	Keypress: space
+11.0861 	EXP 	text_4: autoDraw = False
+11.0861 	EXP 	sq_1: ori = np.float64(37.0)
+11.0861 	EXP 	sq_2: ori = np.float64(7.0)
+11.0861 	EXP 	sq_1: autoDraw = True
+11.0861 	EXP 	sq_2: autoDraw = True
+11.0861 	EXP 	text: autoDraw = True
+11.1361 	EXP 	Device response: <KeyPress from None: t=11.043347708007786, value=space, duration=0.08879787498153746>
+11.3545 	EXP 	Device response: <KeyPress from None: t=11.342781667015515, value=right, duration=None>
+11.3637 	DATA 	Keypress: right
+11.3704 	EXP 	sq_1: autoDraw = False
+11.3704 	EXP 	sq_2: autoDraw = False
+11.3704 	EXP 	text: autoDraw = False
+11.3704 	EXP 	text_fb_task: height = np.float64(0.05)
+11.3704 	EXP 	text_fb_task: height = np.float64(0.05)
+11.3704 	EXP 	text_fb_task: height = np.float64(0.05)
+11.3704 	EXP 	text_fb_task: text = 'Верно!'
+11.3704 	EXP 	text_fb_task: autoDraw = True
+11.4374 	EXP 	Device response: <KeyPress from None: t=11.342781667015515, value=right, duration=0.08947241597343236>
+11.6599 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'w1': 0.12, 'w2': 0.13, 'corr_answ': 'right', 'op1': 0.45, 'op2': 0.85, 'xPos1': -0.2, 'yPos1': 0.0, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 5, 'or2': 10, 'time': 1.5, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+11.6691 	EXP 	text_fb_task: autoDraw = False
+11.6691 	EXP 	sq_1: ori = np.float64(5.0)
+11.6691 	EXP 	sq_2: ori = np.float64(10.0)
+11.6691 	EXP 	sq_1: autoDraw = True
+11.6691 	EXP 	sq_2: autoDraw = True
+11.6691 	EXP 	text: autoDraw = True
+11.8785 	EXP 	Device response: <KeyPress from None: t=11.870523707999382, value=right, duration=None>
+11.8836 	DATA 	Keypress: right
+11.8900 	EXP 	sq_1: autoDraw = False
+11.8900 	EXP 	sq_2: autoDraw = False
+11.8900 	EXP 	text: autoDraw = False
+11.8900 	EXP 	text_fb_task: text = 'Верно!'
+11.8900 	EXP 	text_fb_task: autoDraw = True
+11.9614 	EXP 	Device response: <KeyPress from None: t=11.870523707999382, value=right, duration=0.08344816701719537>
+12.1746 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'w1': 0.15, 'w2': 0.16, 'corr_answ': 'right', 'op1': 0.48, 'op2': 0.15, 'xPos1': -0.2, 'yPos1': 0.21, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 9, 'or2': 25, 'time': 1.0, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+12.1845 	EXP 	text_fb_task: autoDraw = False
+12.1845 	EXP 	text_fb_task: autoDraw = False
+12.1845 	EXP 	sq_1: ori = np.float64(9.0)
+12.1845 	EXP 	sq_2: ori = np.float64(25.0)
+12.1845 	EXP 	sq_1: autoDraw = True
+12.1845 	EXP 	sq_2: autoDraw = True
+12.1845 	EXP 	text: autoDraw = True
+12.3508 	EXP 	Device response: <KeyPress from None: t=12.346958082984202, value=right, duration=None>
+12.3530 	DATA 	Keypress: right
+12.3591 	EXP 	sq_1: autoDraw = False
+12.3591 	EXP 	sq_2: autoDraw = False
+12.3591 	EXP 	text: autoDraw = False
+12.3591 	EXP 	text_fb_task: text = 'Верно!'
+12.3591 	EXP 	text_fb_task: autoDraw = True
+12.4363 	EXP 	Device response: <KeyPress from None: t=12.346958082984202, value=right, duration=0.08473050000611693>
+12.6516 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'w1': 0.16, 'w2': 0.15, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.7, 'xPos1': -0.3, 'yPos1': -0.22, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 6, 'or2': 47, 'time': 1.5, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+12.6619 	EXP 	text_fb_task: autoDraw = False
+12.6619 	EXP 	text_fb_task: autoDraw = False
+12.6619 	EXP 	sq_1: ori = np.float64(6.0)
+12.6619 	EXP 	sq_2: ori = np.float64(47.0)
+12.6619 	EXP 	sq_1: autoDraw = True
+12.6619 	EXP 	sq_2: autoDraw = True
+12.6619 	EXP 	text: autoDraw = True
+12.8031 	EXP 	Device response: <KeyPress from None: t=12.79572754201945, value=right, duration=None>
+12.8100 	DATA 	Keypress: right
+12.8165 	EXP 	sq_1: autoDraw = False
+12.8165 	EXP 	sq_2: autoDraw = False
+12.8165 	EXP 	text: autoDraw = False
+12.8165 	EXP 	text_fb_task: height = np.float64(0.05)
+12.8165 	EXP 	text_fb_task: height = np.float64(0.05)
+12.8165 	EXP 	text_fb_task: height = np.float64(0.05)
+12.8165 	EXP 	text_fb_task: text = 'Увы('
+12.8165 	EXP 	text_fb_task: autoDraw = True
+12.9029 	EXP 	Device response: <KeyPress from None: t=12.79572754201945, value=right, duration=0.10433791601099074>
+13.1034 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'w1': 0.13, 'w2': 0.14, 'corr_answ': 'right', 'op1': 0.46, 'op2': 0.25, 'xPos1': -0.2, 'yPos1': 0.2, 'xPos2': 0.2, 'yPos2': -0.2, 'or1': 10, 'or2': 25, 'time': 1.0, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+13.1119 	EXP 	text_fb_task: autoDraw = False
+13.1119 	EXP 	text_fb_task: autoDraw = False
+13.1119 	EXP 	sq_1: ori = np.float64(10.0)
+13.1119 	EXP 	sq_2: ori = np.float64(25.0)
+13.1119 	EXP 	sq_1: autoDraw = True
+13.1119 	EXP 	sq_2: autoDraw = True
+13.1119 	EXP 	text: autoDraw = True
+13.2378 	EXP 	Device response: <KeyPress from None: t=13.235121292003896, value=right, duration=None>
+13.2416 	DATA 	Keypress: right
+13.2483 	EXP 	sq_1: autoDraw = False
+13.2483 	EXP 	sq_2: autoDraw = False
+13.2483 	EXP 	text: autoDraw = False
+13.2483 	EXP 	text_fb_task: height = np.float64(0.05)
+13.2483 	EXP 	text_fb_task: height = np.float64(0.05)
+13.2483 	EXP 	text_fb_task: height = np.float64(0.05)
+13.2483 	EXP 	text_fb_task: text = 'Верно!'
+13.2483 	EXP 	text_fb_task: autoDraw = True
+13.3377 	EXP 	Device response: <KeyPress from None: t=13.235121292003896, value=right, duration=0.100438125024084>
+13.5518 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'w1': 0.25, 'w2': 0.26, 'corr_answ': 'right', 'op1': 0.54, 'op2': 0.22, 'xPos1': -0.3, 'yPos1': 0.2, 'xPos2': 0.3, 'yPos2': -0.2, 'or1': 37, 'or2': 7, 'time': 1.5, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+13.5690 	EXP 	text_fb_task: autoDraw = False
+13.5690 	EXP 	sq_1: ori = np.float64(37.0)
+13.5690 	EXP 	sq_2: ori = np.float64(7.0)
+13.5690 	EXP 	sq_1: autoDraw = True
+13.5690 	EXP 	sq_2: autoDraw = True
+13.5690 	EXP 	text: autoDraw = True
+13.6709 	EXP 	Device response: <KeyPress from None: t=13.66221725003561, value=right, duration=None>
+13.6734 	DATA 	Keypress: right
+13.6802 	EXP 	sq_1: autoDraw = False
+13.6802 	EXP 	sq_2: autoDraw = False
+13.6802 	EXP 	text: autoDraw = False
+13.6802 	EXP 	text_fb_task: text = 'Верно!'
+13.6802 	EXP 	text_fb_task: autoDraw = True
+13.7693 	EXP 	Device response: <KeyPress from None: t=13.66221725003561, value=right, duration=0.1053106669569388>
+13.9685 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'w1': 0.24, 'w2': 0.25, 'corr_answ': 'right', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 0, 'or2': 45, 'time': 1.5, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+13.9785 	EXP 	text_fb_task: autoDraw = False
+13.9785 	EXP 	text_fb_task: autoDraw = False
+13.9785 	EXP 	sq_1: ori = np.float64(0.0)
+13.9785 	EXP 	sq_2: ori = np.float64(45.0)
+13.9785 	EXP 	sq_1: autoDraw = True
+13.9785 	EXP 	sq_2: autoDraw = True
+13.9785 	EXP 	text: autoDraw = True
+14.1031 	EXP 	Device response: <KeyPress from None: t=14.09485749999294, value=right, duration=None>
+14.1055 	DATA 	Keypress: right
+14.1110 	EXP 	sq_1: autoDraw = False
+14.1110 	EXP 	sq_2: autoDraw = False
+14.1110 	EXP 	text: autoDraw = False
+14.1110 	EXP 	text_fb_task: text = 'Верно!'
+14.1110 	EXP 	text_fb_task: autoDraw = True
+14.2017 	EXP 	Device response: <KeyPress from None: t=14.09485749999294, value=right, duration=0.09944941702997312>
+14.4038 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'w1': 0.19, 'w2': 0.2, 'corr_answ': 'left', 'op1': 0.5, 'op2': 0.2, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 30, 'or2': 15, 'time': 1.5, 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+14.4129 	EXP 	text_fb_task: autoDraw = False
+14.4129 	EXP 	text_fb_task: autoDraw = False
+14.4129 	EXP 	sq_1: ori = np.float64(30.0)
+14.4129 	EXP 	sq_2: ori = np.float64(15.0)
+14.4129 	EXP 	sq_1: autoDraw = True
+14.4129 	EXP 	sq_2: autoDraw = True
+14.4129 	EXP 	text: autoDraw = True
+14.5371 	EXP 	Device response: <KeyPress from None: t=14.53317520802375, value=right, duration=None>
+14.5412 	DATA 	Keypress: right
+14.5478 	EXP 	sq_1: autoDraw = False
+14.5478 	EXP 	sq_2: autoDraw = False
+14.5478 	EXP 	text: autoDraw = False
+14.5478 	EXP 	text_fb_task: height = np.float64(0.05)
+14.5478 	EXP 	text_fb_task: height = np.float64(0.05)
+14.5478 	EXP 	text_fb_task: height = np.float64(0.05)
+14.5478 	EXP 	text_fb_task: text = 'Увы('
+14.5478 	EXP 	text_fb_task: autoDraw = True
+14.6616 	EXP 	Device response: <KeyPress from None: t=14.53317520802375, value=right, duration=0.12049145897617564>
+14.8350 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'w1': 0.15, 'w2': 0.16, 'corr_answ': 'right', 'op1': 0.48, 'op2': 0.15, 'xPos1': -0.2, 'yPos1': 0.21, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 9, 'or2': 25, 'time': 0.7, 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+14.8431 	EXP 	text_fb_task: autoDraw = False
+14.8431 	EXP 	text_fb_task: autoDraw = False
+14.8431 	EXP 	sq_1: ori = np.float64(9.0)
+14.8431 	EXP 	sq_2: ori = np.float64(25.0)
+14.8431 	EXP 	sq_1: autoDraw = True
+14.8431 	EXP 	sq_2: autoDraw = True
+14.8431 	EXP 	text: autoDraw = True
+14.9707 	EXP 	Device response: <KeyPress from None: t=14.968590750009753, value=right, duration=None>
+14.9748 	DATA 	Keypress: right
+14.9815 	EXP 	sq_1: autoDraw = False
+14.9815 	EXP 	sq_2: autoDraw = False
+14.9815 	EXP 	text: autoDraw = False
+14.9815 	EXP 	text_fb_task: height = np.float64(0.05)
+14.9815 	EXP 	text_fb_task: height = np.float64(0.05)
+14.9815 	EXP 	text_fb_task: height = np.float64(0.05)
+14.9815 	EXP 	text_fb_task: text = 'Верно!'
+14.9815 	EXP 	text_fb_task: autoDraw = True
+15.0777 	EXP 	Device response: <KeyPress from None: t=14.968590750009753, value=right, duration=0.10193145798984915>
+15.2698 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'w1': 0.23, 'w2': 0.22, 'corr_answ': 'left', 'op1': 0.6, 'op2': 0.15, 'xPos1': -0.18, 'yPos1': -0.2, 'xPos2': 0.18, 'yPos2': 0.2, 'or1': 30, 'or2': 15, 'time': 1.5, 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+15.2791 	EXP 	text_fb_task: autoDraw = False
+15.2791 	EXP 	text_fb_task: autoDraw = False
+15.2791 	EXP 	sq_1: ori = np.float64(30.0)
+15.2791 	EXP 	sq_2: ori = np.float64(15.0)
+15.2791 	EXP 	sq_1: autoDraw = True
+15.2791 	EXP 	sq_2: autoDraw = True
+15.2791 	EXP 	text: autoDraw = True
+15.3890 	EXP 	Device response: <KeyPress from None: t=15.38336945802439, value=right, duration=None>
+15.3929 	DATA 	Keypress: right
+15.4002 	EXP 	sq_1: autoDraw = False
+15.4002 	EXP 	sq_2: autoDraw = False
+15.4002 	EXP 	text: autoDraw = False
+15.4002 	EXP 	text_fb_task: height = np.float64(0.05)
+15.4002 	EXP 	text_fb_task: height = np.float64(0.05)
+15.4002 	EXP 	text_fb_task: height = np.float64(0.05)
+15.4002 	EXP 	text_fb_task: text = 'Увы('
+15.4002 	EXP 	text_fb_task: autoDraw = True
+15.5119 	EXP 	Device response: <KeyPress from None: t=15.38336945802439, value=right, duration=0.12061462498968467>
+15.6855 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'w1': 0.22, 'w2': 0.21, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.8, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 45, 'or2': 5, 'time': 1.0, 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+15.6940 	EXP 	text_fb_task: autoDraw = False
+15.6940 	EXP 	text_fb_task: autoDraw = False
+15.6940 	EXP 	sq_1: ori = np.float64(45.0)
+15.6940 	EXP 	sq_2: ori = np.float64(5.0)
+15.6940 	EXP 	sq_1: autoDraw = True
+15.6940 	EXP 	sq_2: autoDraw = True
+15.6940 	EXP 	text: autoDraw = True
+15.8148 	EXP 	Device response: <KeyPress from None: t=15.81254600000102, value=right, duration=None>
+15.8222 	EXP 	sq_1: autoDraw = False
+15.8222 	EXP 	sq_2: autoDraw = False
+15.8222 	EXP 	text: autoDraw = False
+15.8222 	EXP 	text_fb_task: text = 'Увы('
+15.8222 	EXP 	text_fb_task: autoDraw = True
+15.8240 	DATA 	Keypress: right
+15.9276 	EXP 	Device response: <KeyPress from None: t=15.81254600000102, value=right, duration=0.11167816701345146>
+16.1097 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'w1': 0.14, 'w2': 0.13, 'corr_answ': 'left', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.3, 'yPos1': 0.21, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 45, 'or2': 5, 'time': 0.7, 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+16.1219 	EXP 	text_fb_task: autoDraw = False
+16.1219 	EXP 	text_fb_task: autoDraw = False
+16.1219 	EXP 	sq_1: ori = np.float64(45.0)
+16.1219 	EXP 	sq_2: ori = np.float64(5.0)
+16.1219 	EXP 	sq_1: autoDraw = True
+16.1219 	EXP 	sq_2: autoDraw = True
+16.1219 	EXP 	text: autoDraw = True
+16.2210 	EXP 	Device response: <KeyPress from None: t=16.20863875001669, value=right, duration=None>
+16.2244 	DATA 	Keypress: right
+16.2312 	EXP 	sq_1: autoDraw = False
+16.2312 	EXP 	sq_2: autoDraw = False
+16.2312 	EXP 	text: autoDraw = False
+16.2312 	EXP 	text_fb_task: text = 'Увы('
+16.2312 	EXP 	text_fb_task: autoDraw = True
+16.3534 	EXP 	Device response: <KeyPress from None: t=16.20863875001669, value=right, duration=0.1414034169865772>
+16.5194 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'w1': 0.2, 'w2': 0.21, 'corr_answ': 'right', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.2, 'yPos1': -0.2, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 0, 'or2': 45, 'time': 1.0, 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+16.5284 	EXP 	text_fb_task: autoDraw = False
+16.5284 	EXP 	text_fb_task: autoDraw = False
+16.5284 	EXP 	sq_1: ori = np.float64(0.0)
+16.5284 	EXP 	sq_2: ori = np.float64(45.0)
+16.5284 	EXP 	sq_1: autoDraw = True
+16.5284 	EXP 	sq_2: autoDraw = True
+16.5284 	EXP 	text: autoDraw = True
+16.6537 	EXP 	Device response: <KeyPress from None: t=16.637418917031027, value=right, duration=None>
+16.6595 	DATA 	Keypress: right
+16.6679 	EXP 	sq_1: autoDraw = False
+16.6679 	EXP 	sq_2: autoDraw = False
+16.6679 	EXP 	text: autoDraw = False
+16.6679 	EXP 	text_fb_task: height = np.float64(0.05)
+16.6679 	EXP 	text_fb_task: height = np.float64(0.05)
+16.6679 	EXP 	text_fb_task: height = np.float64(0.05)
+16.6679 	EXP 	text_fb_task: text = 'Верно!'
+16.6679 	EXP 	text_fb_task: autoDraw = True
+16.7690 	EXP 	Device response: <KeyPress from None: t=16.637418917031027, value=right, duration=0.1302286249701865>
+16.9523 	EXP 	New trial (rep=0, index=13): <Trial 13 (13 in rep 0) data={'w1': 0.26, 'w2': 0.27, 'corr_answ': 'right', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 5, 'or2': 45, 'time': 1.0, 'thisN': 13, 'thisTrialN': 13, 'thisRepN': 0}>
+16.9611 	EXP 	text_fb_task: autoDraw = False
+16.9611 	EXP 	text_fb_task: autoDraw = False
+16.9611 	EXP 	sq_1: ori = np.float64(5.0)
+16.9611 	EXP 	sq_2: ori = np.float64(45.0)
+16.9611 	EXP 	sq_1: autoDraw = True
+16.9611 	EXP 	sq_2: autoDraw = True
+16.9611 	EXP 	text: autoDraw = True
+17.0714 	EXP 	Device response: <KeyPress from None: t=17.06489366700407, value=right, duration=None>
+17.0735 	DATA 	Keypress: right
+17.0802 	EXP 	sq_1: autoDraw = False
+17.0802 	EXP 	sq_2: autoDraw = False
+17.0802 	EXP 	text: autoDraw = False
+17.0802 	EXP 	text_fb_task: text = 'Верно!'
+17.0802 	EXP 	text_fb_task: autoDraw = True
+17.1938 	EXP 	Device response: <KeyPress from None: t=17.06489366700407, value=right, duration=0.12294087500777096>
+17.3703 	EXP 	New trial (rep=0, index=14): <Trial 14 (14 in rep 0) data={'w1': 0.17, 'w2': 0.18, 'corr_answ': 'left', 'op1': 0.3, 'op2': 0.18, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 5, 'or2': 45, 'time': 1.5, 'thisN': 14, 'thisTrialN': 14, 'thisRepN': 0}>
+17.3792 	EXP 	text_fb_task: autoDraw = False
+17.3792 	EXP 	text_fb_task: autoDraw = False
+17.3792 	EXP 	sq_1: ori = np.float64(5.0)
+17.3792 	EXP 	sq_2: ori = np.float64(45.0)
+17.3792 	EXP 	sq_1: autoDraw = True
+17.3792 	EXP 	sq_2: autoDraw = True
+17.3792 	EXP 	text: autoDraw = True
+17.4851 	EXP 	Device response: <KeyPress from None: t=17.47814262501197, value=right, duration=None>
+17.4891 	DATA 	Keypress: right
+17.4950 	EXP 	sq_1: autoDraw = False
+17.4950 	EXP 	sq_2: autoDraw = False
+17.4950 	EXP 	text: autoDraw = False
+17.4950 	EXP 	text_fb_task: height = np.float64(0.05)
+17.4950 	EXP 	text_fb_task: height = np.float64(0.05)
+17.4950 	EXP 	text_fb_task: height = np.float64(0.05)
+17.4950 	EXP 	text_fb_task: text = 'Увы('
+17.4950 	EXP 	text_fb_task: autoDraw = True
+17.6071 	EXP 	Device response: <KeyPress from None: t=17.47814262501197, value=right, duration=0.12283079198095948>
+17.7856 	EXP 	New trial (rep=0, index=15): <Trial 15 (15 in rep 0) data={'w1': 0.17, 'w2': 0.16, 'corr_answ': 'left', 'op1': 0.3, 'op2': 0.18, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 5, 'or2': 45, 'time': 1.5, 'thisN': 15, 'thisTrialN': 15, 'thisRepN': 0}>
+17.7966 	EXP 	text_fb_task: autoDraw = False
+17.7966 	EXP 	text_fb_task: autoDraw = False
+17.7966 	EXP 	sq_1: ori = np.float64(5.0)
+17.7966 	EXP 	sq_2: ori = np.float64(45.0)
+17.7966 	EXP 	sq_1: autoDraw = True
+17.7966 	EXP 	sq_2: autoDraw = True
+17.7966 	EXP 	text: autoDraw = True
+17.8824 	EXP 	Device response: <KeyPress from None: t=17.880134582985193, value=right, duration=None>
+17.8912 	DATA 	Keypress: right
+17.9017 	EXP 	sq_1: autoDraw = False
+17.9017 	EXP 	sq_2: autoDraw = False
+17.9017 	EXP 	text: autoDraw = False
+17.9017 	EXP 	text_fb_task: text = 'Увы('
+17.9017 	EXP 	text_fb_task: autoDraw = True
+18.0212 	EXP 	Device response: <KeyPress from None: t=17.880134582985193, value=right, duration=0.12445366702741012>
+18.1857 	EXP 	New trial (rep=0, index=16): <Trial 16 (16 in rep 0) data={'w1': 0.17, 'w2': 0.18, 'corr_answ': 'right', 'op1': 0.5, 'op2': 0.2, 'xPos1': -0.2, 'yPos1': -0.22, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 7, 'or2': 45, 'time': 0.5, 'thisN': 16, 'thisTrialN': 16, 'thisRepN': 0}>
+18.1945 	EXP 	text_fb_task: autoDraw = False
+18.1945 	EXP 	text_fb_task: autoDraw = False
+18.1945 	EXP 	sq_1: ori = np.float64(7.0)
+18.1945 	EXP 	sq_2: ori = np.float64(45.0)
+18.1945 	EXP 	sq_1: autoDraw = True
+18.1945 	EXP 	sq_2: autoDraw = True
+18.1945 	EXP 	text: autoDraw = True
+18.2867 	EXP 	Device response: <KeyPress from None: t=18.284339042031206, value=right, duration=None>
+18.2910 	DATA 	Keypress: right
+18.2976 	EXP 	sq_1: autoDraw = False
+18.2976 	EXP 	sq_2: autoDraw = False
+18.2976 	EXP 	text: autoDraw = False
+18.2976 	EXP 	text_fb_task: height = np.float64(0.05)
+18.2976 	EXP 	text_fb_task: height = np.float64(0.05)
+18.2976 	EXP 	text_fb_task: height = np.float64(0.05)
+18.2976 	EXP 	text_fb_task: text = 'Верно!'
+18.2976 	EXP 	text_fb_task: autoDraw = True
+18.4268 	EXP 	Device response: <KeyPress from None: t=18.284339042031206, value=right, duration=0.1368019999936223>
+18.5855 	EXP 	New trial (rep=0, index=17): <Trial 17 (17 in rep 0) data={'w1': 0.16, 'w2': 0.17, 'corr_answ': 'right', 'op1': 0.49, 'op2': 0.78, 'xPos1': -0.2, 'yPos1': 0.15, 'xPos2': 0.2, 'yPos2': -0.18, 'or1': 30, 'or2': 5, 'time': 0.7, 'thisN': 17, 'thisTrialN': 17, 'thisRepN': 0}>
+18.5942 	EXP 	text_fb_task: autoDraw = False
+18.5942 	EXP 	text_fb_task: autoDraw = False
+18.5942 	EXP 	sq_1: ori = np.float64(30.0)
+18.5942 	EXP 	sq_2: ori = np.float64(5.0)
+18.5942 	EXP 	sq_1: autoDraw = True
+18.5942 	EXP 	sq_2: autoDraw = True
+18.5942 	EXP 	text: autoDraw = True
+18.6883 	EXP 	Device response: <KeyPress from None: t=18.686280583031476, value=right, duration=None>
+18.6922 	DATA 	Keypress: right
+18.7086 	EXP 	sq_1: autoDraw = False
+18.7086 	EXP 	sq_2: autoDraw = False
+18.7086 	EXP 	text: autoDraw = False
+18.7086 	EXP 	text_fb_task: text = 'Верно!'
+18.7086 	EXP 	text_fb_task: autoDraw = True
+18.8297 	EXP 	Device response: <KeyPress from None: t=18.686280583031476, value=right, duration=0.14150904200505465>
+19.0024 	EXP 	New trial (rep=0, index=18): <Trial 18 (18 in rep 0) data={'w1': 0.28, 'w2': 0.27, 'corr_answ': 'left', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 5, 'or2': 45, 'time': 1.5, 'thisN': 18, 'thisTrialN': 18, 'thisRepN': 0}>
+19.0185 	EXP 	text_fb_task: autoDraw = False
+19.0185 	EXP 	sq_1: ori = np.float64(5.0)
+19.0185 	EXP 	sq_2: ori = np.float64(45.0)
+19.0185 	EXP 	sq_1: autoDraw = True
+19.0185 	EXP 	sq_2: autoDraw = True
+19.0185 	EXP 	text: autoDraw = True
+19.1210 	EXP 	Device response: <KeyPress from None: t=19.11714570800541, value=right, duration=None>
+19.1251 	DATA 	Keypress: right
+19.1316 	EXP 	sq_1: autoDraw = False
+19.1316 	EXP 	sq_2: autoDraw = False
+19.1316 	EXP 	text: autoDraw = False
+19.1316 	EXP 	text_fb_task: height = np.float64(0.05)
+19.1316 	EXP 	text_fb_task: height = np.float64(0.05)
+19.1316 	EXP 	text_fb_task: height = np.float64(0.05)
+19.1316 	EXP 	text_fb_task: text = 'Увы('
+19.1316 	EXP 	text_fb_task: autoDraw = True
+19.2600 	EXP 	Device response: <KeyPress from None: t=19.11714570800541, value=right, duration=0.14100699999835342>
+19.4354 	EXP 	New trial (rep=0, index=19): <Trial 19 (19 in rep 0) data={'w1': 0.15, 'w2': 0.14, 'corr_answ': 'left', 'op1': 0.8, 'op2': 0.16, 'xPos1': -0.3, 'yPos1': 0.15, 'xPos2': 0.3, 'yPos2': -0.18, 'or1': 30, 'or2': 15, 'time': 1.0, 'thisN': 19, 'thisTrialN': 19, 'thisRepN': 0}>
+19.4522 	EXP 	text_fb_task: autoDraw = False
+19.4522 	EXP 	sq_1: ori = np.float64(30.0)
+19.4522 	EXP 	sq_2: ori = np.float64(15.0)
+19.4522 	EXP 	sq_1: autoDraw = True
+19.4522 	EXP 	sq_2: autoDraw = True
+19.4522 	EXP 	text: autoDraw = True
+19.7034 	EXP 	Device response: <KeyPress from None: t=19.700316542002838, value=right, duration=None>
+19.7056 	DATA 	Keypress: right
+19.7122 	EXP 	sq_1: autoDraw = False
+19.7122 	EXP 	sq_2: autoDraw = False
+19.7122 	EXP 	text: autoDraw = False
+19.7122 	EXP 	text_fb_task: text = 'Увы('
+19.7122 	EXP 	text_fb_task: autoDraw = True
+19.8105 	EXP 	Device response: <KeyPress from None: t=19.700316542002838, value=right, duration=0.1087859160033986>
+20.0023 	EXP 	New trial (rep=0, index=20): <Trial 20 (20 in rep 0) data={'w1': 0.15, 'w2': 0.14, 'corr_answ': 'left', 'op1': 0.8, 'op2': 0.16, 'xPos1': -0.3, 'yPos1': 0.15, 'xPos2': 0.3, 'yPos2': -0.18, 'or1': 30, 'or2': 15, 'time': 0.5, 'thisN': 20, 'thisTrialN': 20, 'thisRepN': 0}>
+20.0120 	EXP 	text_fb_task: autoDraw = False
+20.0120 	EXP 	text_fb_task: autoDraw = False
+20.0120 	EXP 	sq_1: ori = np.float64(30.0)
+20.0120 	EXP 	sq_2: ori = np.float64(15.0)
+20.0120 	EXP 	sq_1: autoDraw = True
+20.0120 	EXP 	sq_2: autoDraw = True
+20.0120 	EXP 	text: autoDraw = True
+20.1029 	EXP 	Device response: <KeyPress from None: t=20.09290366701316, value=right, duration=None>
+20.1056 	DATA 	Keypress: right
+20.1174 	EXP 	sq_1: autoDraw = False
+20.1174 	EXP 	sq_2: autoDraw = False
+20.1174 	EXP 	text: autoDraw = False
+20.1174 	EXP 	text_fb_task: text = 'Увы('
+20.1174 	EXP 	text_fb_task: autoDraw = True
+20.2255 	EXP 	Device response: <KeyPress from None: t=20.09290366701316, value=right, duration=0.12863616598770022>
+20.4028 	EXP 	New trial (rep=0, index=21): <Trial 21 (21 in rep 0) data={'w1': 0.27, 'w2': 0.26, 'corr_answ': 'left', 'op1': 0.52, 'op2': 0.2, 'xPos1': -0.18, 'yPos1': 0.15, 'xPos2': 0.18, 'yPos2': -0.18, 'or1': 20, 'or2': 4, 'time': 1.5, 'thisN': 21, 'thisTrialN': 21, 'thisRepN': 0}>
+20.4128 	EXP 	text_fb_task: autoDraw = False
+20.4128 	EXP 	text_fb_task: autoDraw = False
+20.4128 	EXP 	sq_1: ori = np.float64(20.0)
+20.4128 	EXP 	sq_2: ori = np.float64(4.0)
+20.4128 	EXP 	sq_1: autoDraw = True
+20.4128 	EXP 	sq_2: autoDraw = True
+20.4128 	EXP 	text: autoDraw = True
+20.5272 	EXP 	Device response: <KeyPress from None: t=20.52062558301259, value=right, duration=None>
+20.5292 	DATA 	Keypress: right
+20.5364 	EXP 	sq_1: autoDraw = False
+20.5364 	EXP 	sq_2: autoDraw = False
+20.5364 	EXP 	text: autoDraw = False
+20.5364 	EXP 	text_fb_task: text = 'Увы('
+20.5364 	EXP 	text_fb_task: autoDraw = True
+20.6446 	EXP 	Device response: <KeyPress from None: t=20.52062558301259, value=right, duration=0.11890674999449402>
+20.8273 	EXP 	New trial (rep=0, index=22): <Trial 22 (22 in rep 0) data={'w1': 0.19, 'w2': 0.2, 'corr_answ': 'right', 'op1': 0.52, 'op2': 0.2, 'xPos1': -0.2, 'yPos1': 0.2, 'xPos2': 0.2, 'yPos2': -0.2, 'or1': 36, 'or2': 10, 'time': 1.5, 'thisN': 22, 'thisTrialN': 22, 'thisRepN': 0}>
+20.8517 	EXP 	text_fb_task: autoDraw = False
+20.8517 	EXP 	text_fb_task: autoDraw = False
+20.8517 	EXP 	sq_1: ori = np.float64(36.0)
+20.8517 	EXP 	sq_2: ori = np.float64(10.0)
+20.8517 	EXP 	sq_1: autoDraw = True
+20.8517 	EXP 	sq_2: autoDraw = True
+20.8517 	EXP 	text: autoDraw = True
+20.9377 	EXP 	Device response: <KeyPress from None: t=20.936403000028804, value=right, duration=None>
+20.9431 	DATA 	Keypress: right
+20.9508 	EXP 	sq_1: autoDraw = False
+20.9508 	EXP 	sq_2: autoDraw = False
+20.9508 	EXP 	text: autoDraw = False
+20.9508 	EXP 	text_fb_task: height = np.float64(0.05)
+20.9508 	EXP 	text_fb_task: height = np.float64(0.05)
+20.9508 	EXP 	text_fb_task: height = np.float64(0.05)
+20.9508 	EXP 	text_fb_task: text = 'Верно!'
+20.9508 	EXP 	text_fb_task: autoDraw = True
+21.0702 	EXP 	Device response: <KeyPress from None: t=20.936403000028804, value=right, duration=0.12458174995845184>
+21.2366 	EXP 	New trial (rep=0, index=23): <Trial 23 (23 in rep 0) data={'w1': 0.16, 'w2': 0.15, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.7, 'xPos1': -0.3, 'yPos1': -0.22, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 6, 'or2': 47, 'time': 1.5, 'thisN': 23, 'thisTrialN': 23, 'thisRepN': 0}>
+21.2453 	EXP 	text_fb_task: autoDraw = False
+21.2453 	EXP 	text_fb_task: autoDraw = False
+21.2453 	EXP 	sq_1: ori = np.float64(6.0)
+21.2453 	EXP 	sq_2: ori = np.float64(47.0)
+21.2453 	EXP 	sq_1: autoDraw = True
+21.2453 	EXP 	sq_2: autoDraw = True
+21.2453 	EXP 	text: autoDraw = True
+21.3601 	EXP 	Device response: <KeyPress from None: t=21.353164792002644, value=right, duration=None>
+21.3643 	DATA 	Keypress: right
+21.3714 	EXP 	sq_1: autoDraw = False
+21.3714 	EXP 	sq_2: autoDraw = False
+21.3714 	EXP 	text: autoDraw = False
+21.3714 	EXP 	text_fb_task: height = np.float64(0.05)
+21.3714 	EXP 	text_fb_task: height = np.float64(0.05)
+21.3714 	EXP 	text_fb_task: height = np.float64(0.05)
+21.3714 	EXP 	text_fb_task: text = 'Увы('
+21.3714 	EXP 	text_fb_task: autoDraw = True
+21.4867 	EXP 	Device response: <KeyPress from None: t=21.353164792002644, value=right, duration=0.13251220801612362>
+21.6603 	EXP 	New trial (rep=0, index=24): <Trial 24 (24 in rep 0) data={'w1': 0.2, 'w2': 0.21, 'corr_answ': 'left', 'op1': 0.15, 'op2': 0.6, 'xPos1': -0.3, 'yPos1': 0.21, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 6, 'or2': 47, 'time': 1.5, 'thisN': 24, 'thisTrialN': 24, 'thisRepN': 0}>
+21.6698 	EXP 	text_fb_task: autoDraw = False
+21.6698 	EXP 	text_fb_task: autoDraw = False
+21.6698 	EXP 	sq_1: ori = np.float64(6.0)
+21.6698 	EXP 	sq_2: ori = np.float64(47.0)
+21.6698 	EXP 	sq_1: autoDraw = True
+21.6698 	EXP 	sq_2: autoDraw = True
+21.6698 	EXP 	text: autoDraw = True
+21.7702 	EXP 	Device response: <KeyPress from None: t=21.753881958022248, value=right, duration=None>
+21.7721 	DATA 	Keypress: right
+21.7787 	EXP 	sq_1: autoDraw = False
+21.7787 	EXP 	sq_2: autoDraw = False
+21.7787 	EXP 	text: autoDraw = False
+21.7787 	EXP 	text_fb_task: text = 'Увы('
+21.7787 	EXP 	text_fb_task: autoDraw = True
+21.8783 	EXP 	Device response: <KeyPress from None: t=21.753881958022248, value=right, duration=0.12171400000806898>
+22.0691 	EXP 	New trial (rep=0, index=25): <Trial 25 (25 in rep 0) data={'w1': 0.18, 'w2': 0.17, 'corr_answ': 'left', 'op1': 0.4, 'op2': 0.19, 'xPos1': -0.3, 'yPos1': 0.2, 'xPos2': 0.3, 'yPos2': -0.2, 'or1': 45, 'or2': 5, 'time': 0.7, 'thisN': 25, 'thisTrialN': 25, 'thisRepN': 0}>
+22.0786 	EXP 	text_fb_task: autoDraw = False
+22.0786 	EXP 	text_fb_task: autoDraw = False
+22.0786 	EXP 	sq_1: ori = np.float64(45.0)
+22.0786 	EXP 	sq_2: ori = np.float64(5.0)
+22.0786 	EXP 	sq_1: autoDraw = True
+22.0786 	EXP 	sq_2: autoDraw = True
+22.0786 	EXP 	text: autoDraw = True
+22.1543 	EXP 	Device response: <KeyPress from None: t=22.13991425000131, value=right, duration=None>
+22.1580 	DATA 	Keypress: right
+22.1647 	EXP 	sq_1: autoDraw = False
+22.1647 	EXP 	sq_2: autoDraw = False
+22.1647 	EXP 	text: autoDraw = False
+22.1647 	EXP 	text_fb_task: text = 'Увы('
+22.1647 	EXP 	text_fb_task: autoDraw = True
+22.2866 	EXP 	Device response: <KeyPress from None: t=22.13991425000131, value=right, duration=0.14417687500827014>
+22.4532 	EXP 	New trial (rep=0, index=26): <Trial 26 (26 in rep 0) data={'w1': 0.18, 'w2': 0.19, 'corr_answ': 'right', 'op1': 0.51, 'op2': 0.8, 'xPos1': -0.2, 'yPos1': -0.2, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 45, 'or2': 3, 'time': 0.5, 'thisN': 26, 'thisTrialN': 26, 'thisRepN': 0}>
+22.4625 	EXP 	text_fb_task: autoDraw = False
+22.4625 	EXP 	text_fb_task: autoDraw = False
+22.4625 	EXP 	sq_1: ori = np.float64(45.0)
+22.4625 	EXP 	sq_2: ori = np.float64(3.0)
+22.4625 	EXP 	sq_1: autoDraw = True
+22.4625 	EXP 	sq_2: autoDraw = True
+22.4625 	EXP 	text: autoDraw = True
+22.5699 	EXP 	Device response: <KeyPress from None: t=22.56239687500056, value=right, duration=None>
+22.5750 	DATA 	Keypress: right
+22.5841 	EXP 	sq_1: autoDraw = False
+22.5841 	EXP 	sq_2: autoDraw = False
+22.5841 	EXP 	text: autoDraw = False
+22.5841 	EXP 	text_fb_task: height = np.float64(0.05)
+22.5841 	EXP 	text_fb_task: height = np.float64(0.05)
+22.5841 	EXP 	text_fb_task: height = np.float64(0.05)
+22.5841 	EXP 	text_fb_task: text = 'Верно!'
+22.5841 	EXP 	text_fb_task: autoDraw = True
+22.7059 	EXP 	Device response: <KeyPress from None: t=22.56239687500056, value=right, duration=0.135330791992601>
+22.8695 	EXP 	New trial (rep=0, index=27): <Trial 27 (27 in rep 0) data={'w1': 0.24, 'w2': 0.23, 'corr_answ': 'left', 'op1': 0.7, 'op2': 0.16, 'xPos1': -0.18, 'yPos1': 0.2, 'xPos2': 0.18, 'yPos2': -0.2, 'or1': 6, 'or2': 47, 'time': 1.5, 'thisN': 27, 'thisTrialN': 27, 'thisRepN': 0}>
+22.8817 	EXP 	text_fb_task: autoDraw = False
+22.8817 	EXP 	text_fb_task: autoDraw = False
+22.8817 	EXP 	sq_1: ori = np.float64(6.0)
+22.8817 	EXP 	sq_2: ori = np.float64(47.0)
+22.8817 	EXP 	sq_1: autoDraw = True
+22.8817 	EXP 	sq_2: autoDraw = True
+22.8817 	EXP 	text: autoDraw = True
+23.0046 	EXP 	Device response: <KeyPress from None: t=22.991419208003208, value=right, duration=None>
+23.0097 	DATA 	Keypress: right
+23.0156 	EXP 	sq_1: autoDraw = False
+23.0156 	EXP 	sq_2: autoDraw = False
+23.0156 	EXP 	text: autoDraw = False
+23.0156 	EXP 	text_fb_task: height = np.float64(0.05)
+23.0156 	EXP 	text_fb_task: height = np.float64(0.05)
+23.0156 	EXP 	text_fb_task: height = np.float64(0.05)
+23.0156 	EXP 	text_fb_task: text = 'Увы('
+23.0156 	EXP 	text_fb_task: autoDraw = True
+23.1205 	EXP 	Device response: <KeyPress from None: t=22.991419208003208, value=right, duration=0.1263766250340268>
+23.3187 	EXP 	New trial (rep=0, index=28): <Trial 28 (28 in rep 0) data={'w1': 0.18, 'w2': 0.19, 'corr_answ': 'left', 'op1': 0.4, 'op2': 0.19, 'xPos1': -0.3, 'yPos1': 0.2, 'xPos2': 0.3, 'yPos2': -0.2, 'or1': 45, 'or2': 5, 'time': 1.5, 'thisN': 28, 'thisTrialN': 28, 'thisRepN': 0}>
+23.3360 	EXP 	text_fb_task: autoDraw = False
+23.3360 	EXP 	sq_1: ori = np.float64(45.0)
+23.3360 	EXP 	sq_2: ori = np.float64(5.0)
+23.3360 	EXP 	sq_1: autoDraw = True
+23.3360 	EXP 	sq_2: autoDraw = True
+23.3360 	EXP 	text: autoDraw = True
+23.4185 	EXP 	Device response: <KeyPress from None: t=23.40975316701224, value=right, duration=None>
+23.4209 	DATA 	Keypress: right
+23.4264 	EXP 	sq_1: autoDraw = False
+23.4264 	EXP 	sq_2: autoDraw = False
+23.4264 	EXP 	text: autoDraw = False
+23.4264 	EXP 	text_fb_task: text = 'Увы('
+23.4264 	EXP 	text_fb_task: autoDraw = True
+23.5524 	EXP 	Device response: <KeyPress from None: t=23.40975316701224, value=right, duration=0.14113454101607203>
+23.7098 	EXP 	New trial (rep=0, index=29): <Trial 29 (29 in rep 0) data={'w1': 0.26, 'w2': 0.25, 'corr_answ': 'left', 'op1': 0.25, 'op2': 0.25, 'xPos1': -0.18, 'yPos1': 0.21, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 3, 'or2': 45, 'time': 1.5, 'thisN': 29, 'thisTrialN': 29, 'thisRepN': 0}>
+23.7196 	EXP 	text_fb_task: autoDraw = False
+23.7196 	EXP 	text_fb_task: autoDraw = False
+23.7196 	EXP 	sq_1: ori = np.float64(3.0)
+23.7196 	EXP 	sq_2: ori = np.float64(45.0)
+23.7196 	EXP 	sq_1: autoDraw = True
+23.7196 	EXP 	sq_2: autoDraw = True
+23.7196 	EXP 	text: autoDraw = True
+23.8355 	EXP 	Device response: <KeyPress from None: t=23.82649654202396, value=right, duration=None>
+23.8385 	DATA 	Keypress: right
+23.8452 	EXP 	sq_1: autoDraw = False
+23.8452 	EXP 	sq_2: autoDraw = False
+23.8452 	EXP 	text: autoDraw = False
+23.8452 	EXP 	text_fb_task: text = 'Увы('
+23.8452 	EXP 	text_fb_task: autoDraw = True
+23.9611 	EXP 	Device response: <KeyPress from None: t=23.82649654202396, value=right, duration=0.12831579096382484>
+24.1353 	EXP 	New trial (rep=0, index=30): <Trial 30 (30 in rep 0) data={'w1': 0.14, 'w2': 0.15, 'corr_answ': 'right', 'op1': 0.47, 'op2': 0.75, 'xPos1': -0.2, 'yPos1': -0.2, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 35, 'or2': 8, 'time': 0.5, 'thisN': 30, 'thisTrialN': 30, 'thisRepN': 0}>
+24.1449 	EXP 	text_fb_task: autoDraw = False
+24.1449 	EXP 	text_fb_task: autoDraw = False
+24.1449 	EXP 	sq_1: ori = np.float64(35.0)
+24.1449 	EXP 	sq_2: ori = np.float64(8.0)
+24.1449 	EXP 	sq_1: autoDraw = True
+24.1449 	EXP 	sq_2: autoDraw = True
+24.1449 	EXP 	text: autoDraw = True
+24.2526 	EXP 	Device response: <KeyPress from None: t=24.231374667026103, value=right, duration=None>
+24.2581 	DATA 	Keypress: right
+24.2674 	EXP 	sq_1: autoDraw = False
+24.2674 	EXP 	sq_2: autoDraw = False
+24.2674 	EXP 	text: autoDraw = False
+24.2674 	EXP 	text_fb_task: height = np.float64(0.05)
+24.2674 	EXP 	text_fb_task: height = np.float64(0.05)
+24.2674 	EXP 	text_fb_task: height = np.float64(0.05)
+24.2674 	EXP 	text_fb_task: text = 'Верно!'
+24.2674 	EXP 	text_fb_task: autoDraw = True
+24.3859 	EXP 	Device response: <KeyPress from None: t=24.231374667026103, value=right, duration=0.14465179096441716>
+24.5525 	EXP 	New trial (rep=0, index=31): <Trial 31 (31 in rep 0) data={'w1': 0.16, 'w2': 0.17, 'corr_answ': 'right', 'op1': 0.49, 'op2': 0.78, 'xPos1': -0.2, 'yPos1': 0.15, 'xPos2': 0.2, 'yPos2': -0.18, 'or1': 30, 'or2': 5, 'time': 1.0, 'thisN': 31, 'thisTrialN': 31, 'thisRepN': 0}>
+24.5614 	EXP 	text_fb_task: autoDraw = False
+24.5614 	EXP 	text_fb_task: autoDraw = False
+24.5614 	EXP 	sq_1: ori = np.float64(30.0)
+24.5614 	EXP 	sq_2: ori = np.float64(5.0)
+24.5614 	EXP 	sq_1: autoDraw = True
+24.5614 	EXP 	sq_2: autoDraw = True
+24.5614 	EXP 	text: autoDraw = True
+24.6703 	EXP 	Device response: <KeyPress from None: t=24.660007333033718, value=right, duration=None>
+24.6733 	DATA 	Keypress: right
+24.6801 	EXP 	sq_1: autoDraw = False
+24.6801 	EXP 	sq_2: autoDraw = False
+24.6801 	EXP 	text: autoDraw = False
+24.6801 	EXP 	text_fb_task: text = 'Верно!'
+24.6801 	EXP 	text_fb_task: autoDraw = True
+24.7792 	EXP 	Device response: <KeyPress from None: t=24.660007333033718, value=right, duration=0.11584849999053404>
+24.9704 	EXP 	New trial (rep=0, index=32): <Trial 32 (32 in rep 0) data={'w1': 0.23, 'w2': 0.17, 'corr_answ': 'right', 'op1': 0.52, 'op2': 0.2, 'xPos1': -0.3, 'yPos1': -0.22, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 36, 'or2': 10, 'time': 1.5, 'thisN': 32, 'thisTrialN': 32, 'thisRepN': 0}>
+24.9810 	EXP 	text_fb_task: autoDraw = False
+24.9810 	EXP 	text_fb_task: autoDraw = False
+24.9810 	EXP 	sq_1: ori = np.float64(36.0)
+24.9810 	EXP 	sq_2: ori = np.float64(10.0)
+24.9810 	EXP 	sq_1: autoDraw = True
+24.9810 	EXP 	sq_2: autoDraw = True
+24.9810 	EXP 	text: autoDraw = True
+25.0527 	EXP 	Device response: <KeyPress from None: t=25.05060020799283, value=right, duration=None>
+25.0544 	DATA 	Keypress: right
+25.0603 	EXP 	sq_1: autoDraw = False
+25.0603 	EXP 	sq_2: autoDraw = False
+25.0603 	EXP 	text: autoDraw = False
+25.0603 	EXP 	text_fb_task: text = 'Верно!'
+25.0603 	EXP 	text_fb_task: autoDraw = True
+25.1934 	EXP 	Device response: <KeyPress from None: t=25.05060020799283, value=right, duration=0.13884287502150983>
+25.3434 	EXP 	New trial (rep=0, index=33): <Trial 33 (33 in rep 0) data={'w1': 0.21, 'w2': 0.2, 'corr_answ': 'left', 'op1': 0.16, 'op2': 0.7, 'xPos1': -0.18, 'yPos1': 0.15, 'xPos2': 0.18, 'yPos2': -0.18, 'or1': 5, 'or2': 45, 'time': 1.0, 'thisN': 33, 'thisTrialN': 33, 'thisRepN': 0}>
+25.3536 	EXP 	text_fb_task: autoDraw = False
+25.3536 	EXP 	text_fb_task: autoDraw = False
+25.3536 	EXP 	sq_1: ori = np.float64(5.0)
+25.3536 	EXP 	sq_2: ori = np.float64(45.0)
+25.3536 	EXP 	sq_1: autoDraw = True
+25.3536 	EXP 	sq_2: autoDraw = True
+25.3536 	EXP 	text: autoDraw = True
+25.4870 	EXP 	Device response: <KeyPress from None: t=25.484714874997735, value=right, duration=None>
+25.4912 	DATA 	Keypress: right
+25.4972 	EXP 	sq_1: autoDraw = False
+25.4972 	EXP 	sq_2: autoDraw = False
+25.4972 	EXP 	text: autoDraw = False
+25.4972 	EXP 	text_fb_task: height = np.float64(0.05)
+25.4972 	EXP 	text_fb_task: height = np.float64(0.05)
+25.4972 	EXP 	text_fb_task: height = np.float64(0.05)
+25.4972 	EXP 	text_fb_task: text = 'Увы('
+25.4972 	EXP 	text_fb_task: autoDraw = True
+25.6192 	EXP 	Device response: <KeyPress from None: t=25.484714874997735, value=right, duration=0.13329820800572634>
+25.7844 	EXP 	New trial (rep=0, index=34): <Trial 34 (34 in rep 0) data={'w1': 0.22, 'w2': 0.23, 'corr_answ': 'right', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.2, 'yPos1': 0.15, 'xPos2': 0.2, 'yPos2': -0.18, 'or1': 45, 'or2': 3, 'time': 1.5, 'thisN': 34, 'thisTrialN': 34, 'thisRepN': 0}>
+25.7950 	EXP 	text_fb_task: autoDraw = False
+25.7950 	EXP 	text_fb_task: autoDraw = False
+25.7950 	EXP 	sq_1: ori = np.float64(45.0)
+25.7950 	EXP 	sq_2: ori = np.float64(3.0)
+25.7950 	EXP 	sq_1: autoDraw = True
+25.7950 	EXP 	sq_2: autoDraw = True
+25.7950 	EXP 	text: autoDraw = True
+25.9521 	EXP 	Device response: <KeyPress from None: t=25.945793999999296, value=right, duration=None>
+25.9560 	DATA 	Keypress: right
+25.9628 	EXP 	sq_1: autoDraw = False
+25.9628 	EXP 	sq_2: autoDraw = False
+25.9628 	EXP 	text: autoDraw = False
+25.9628 	EXP 	text_fb_task: height = np.float64(0.05)
+25.9628 	EXP 	text_fb_task: height = np.float64(0.05)
+25.9628 	EXP 	text_fb_task: height = np.float64(0.05)
+25.9628 	EXP 	text_fb_task: text = 'Верно!'
+25.9628 	EXP 	text_fb_task: autoDraw = True
+26.0700 	EXP 	Device response: <KeyPress from None: t=25.945793999999296, value=right, duration=0.12274241703562438>
+26.2513 	EXP 	New trial (rep=0, index=35): <Trial 35 (35 in rep 0) data={'w1': 0.14, 'w2': 0.13, 'corr_answ': 'left', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.3, 'yPos1': 0.21, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 45, 'or2': 5, 'time': 0.5, 'thisN': 35, 'thisTrialN': 35, 'thisRepN': 0}>
+26.2597 	EXP 	text_fb_task: autoDraw = False
+26.2597 	EXP 	text_fb_task: autoDraw = False
+26.2597 	EXP 	sq_1: ori = np.float64(45.0)
+26.2597 	EXP 	sq_2: ori = np.float64(5.0)
+26.2597 	EXP 	sq_1: autoDraw = True
+26.2597 	EXP 	sq_2: autoDraw = True
+26.2597 	EXP 	text: autoDraw = True
+26.3869 	EXP 	Device response: <KeyPress from None: t=26.383856041997205, value=right, duration=None>
+26.3908 	DATA 	Keypress: right
+26.3972 	EXP 	sq_1: autoDraw = False
+26.3972 	EXP 	sq_2: autoDraw = False
+26.3972 	EXP 	text: autoDraw = False
+26.3972 	EXP 	text_fb_task: height = np.float64(0.05)
+26.3972 	EXP 	text_fb_task: height = np.float64(0.05)
+26.3972 	EXP 	text_fb_task: height = np.float64(0.05)
+26.3972 	EXP 	text_fb_task: text = 'Увы('
+26.3972 	EXP 	text_fb_task: autoDraw = True
+26.5184 	EXP 	Device response: <KeyPress from None: t=26.383856041997205, value=right, duration=0.1269082910148427>
+26.6869 	EXP 	New trial (rep=0, index=36): <Trial 36 (36 in rep 0) data={'w1': 0.13, 'w2': 0.14, 'corr_answ': 'right', 'op1': 0.46, 'op2': 0.25, 'xPos1': -0.2, 'yPos1': 0.2, 'xPos2': 0.2, 'yPos2': -0.2, 'or1': 10, 'or2': 25, 'time': 1.0, 'thisN': 36, 'thisTrialN': 36, 'thisRepN': 0}>
+26.6976 	EXP 	text_fb_task: autoDraw = False
+26.6976 	EXP 	text_fb_task: autoDraw = False
+26.6976 	EXP 	sq_1: ori = np.float64(10.0)
+26.6976 	EXP 	sq_2: ori = np.float64(25.0)
+26.6976 	EXP 	sq_1: autoDraw = True
+26.6976 	EXP 	sq_2: autoDraw = True
+26.6976 	EXP 	text: autoDraw = True
+26.8100 	EXP 	Device response: <KeyPress from None: t=26.802270082989708, value=right, duration=None>
+26.8144 	DATA 	Keypress: right
+26.8216 	EXP 	sq_1: autoDraw = False
+26.8216 	EXP 	sq_2: autoDraw = False
+26.8216 	EXP 	text: autoDraw = False
+26.8216 	EXP 	text_fb_task: height = np.float64(0.05)
+26.8216 	EXP 	text_fb_task: height = np.float64(0.05)
+26.8216 	EXP 	text_fb_task: height = np.float64(0.05)
+26.8216 	EXP 	text_fb_task: text = 'Верно!'
+26.8216 	EXP 	text_fb_task: autoDraw = True
+26.9360 	EXP 	Device response: <KeyPress from None: t=26.802270082989708, value=right, duration=0.12982579204253852>
+27.1076 	EXP 	New trial (rep=0, index=37): <Trial 37 (37 in rep 0) data={'w1': 0.14, 'w2': 0.15, 'corr_answ': 'right', 'op1': 0.47, 'op2': 0.75, 'xPos1': -0.2, 'yPos1': -0.2, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 35, 'or2': 8, 'time': 1.0, 'thisN': 37, 'thisTrialN': 37, 'thisRepN': 0}>
+27.1177 	EXP 	text_fb_task: autoDraw = False
+27.1177 	EXP 	text_fb_task: autoDraw = False
+27.1177 	EXP 	sq_1: ori = np.float64(35.0)
+27.1177 	EXP 	sq_2: ori = np.float64(8.0)
+27.1177 	EXP 	sq_1: autoDraw = True
+27.1177 	EXP 	sq_2: autoDraw = True
+27.1177 	EXP 	text: autoDraw = True
+27.2420 	EXP 	Device response: <KeyPress from None: t=27.236361832998227, value=right, duration=None>
+27.2441 	DATA 	Keypress: right
+27.2499 	EXP 	sq_1: autoDraw = False
+27.2499 	EXP 	sq_2: autoDraw = False
+27.2499 	EXP 	text: autoDraw = False
+27.2499 	EXP 	text_fb_task: text = 'Верно!'
+27.2499 	EXP 	text_fb_task: autoDraw = True
+27.3611 	EXP 	Device response: <KeyPress from None: t=27.236361832998227, value=right, duration=0.12120595900341868>
+27.5362 	EXP 	New trial (rep=0, index=38): <Trial 38 (38 in rep 0) data={'w1': 0.25, 'w2': 0.24, 'corr_answ': 'left', 'op1': 0.8, 'op2': 0.17, 'xPos1': -0.18, 'yPos1': -0.2, 'xPos2': 0.18, 'yPos2': 0.2, 'or1': 25, 'or2': 4, 'time': 1.5, 'thisN': 38, 'thisTrialN': 38, 'thisRepN': 0}>
+27.5465 	EXP 	text_fb_task: autoDraw = False
+27.5465 	EXP 	text_fb_task: autoDraw = False
+27.5465 	EXP 	sq_1: ori = np.float64(25.0)
+27.5465 	EXP 	sq_2: ori = np.float64(4.0)
+27.5465 	EXP 	sq_1: autoDraw = True
+27.5465 	EXP 	sq_2: autoDraw = True
+27.5465 	EXP 	text: autoDraw = True
+27.6461 	EXP 	Device response: <KeyPress from None: t=27.64534950000234, value=right, duration=None>
+27.6553 	EXP 	sq_1: autoDraw = False
+27.6553 	EXP 	sq_2: autoDraw = False
+27.6553 	EXP 	text: autoDraw = False
+27.6553 	EXP 	text_fb_task: height = np.float64(0.05)
+27.6553 	EXP 	text_fb_task: height = np.float64(0.05)
+27.6553 	EXP 	text_fb_task: height = np.float64(0.05)
+27.6553 	EXP 	text_fb_task: text = 'Увы('
+27.6553 	EXP 	text_fb_task: autoDraw = True
+27.6570 	DATA 	Keypress: right
+27.7693 	EXP 	Device response: <KeyPress from None: t=27.64534950000234, value=right, duration=0.12175916699925438>
+27.9413 	EXP 	New trial (rep=0, index=39): <Trial 39 (39 in rep 0) data={'w1': 0.12, 'w2': 0.13, 'corr_answ': 'right', 'op1': 0.45, 'op2': 0.85, 'xPos1': -0.2, 'yPos1': 0.0, 'xPos2': 0.2, 'yPos2': 0.2, 'or1': 5, 'or2': 10, 'time': 1.0, 'thisN': 39, 'thisTrialN': 39, 'thisRepN': 0}>
+27.9508 	EXP 	text_fb_task: autoDraw = False
+27.9508 	EXP 	text_fb_task: autoDraw = False
+27.9508 	EXP 	sq_1: ori = np.float64(5.0)
+27.9508 	EXP 	sq_2: ori = np.float64(10.0)
+27.9508 	EXP 	sq_1: autoDraw = True
+27.9508 	EXP 	sq_2: autoDraw = True
+27.9508 	EXP 	text: autoDraw = True
+28.0424 	EXP 	Device response: <KeyPress from None: t=28.038341500039678, value=right, duration=None>
+28.0461 	DATA 	Keypress: right
+28.0520 	EXP 	sq_1: autoDraw = False
+28.0520 	EXP 	sq_2: autoDraw = False
+28.0520 	EXP 	text: autoDraw = False
+28.0520 	EXP 	text_fb_task: height = np.float64(0.05)
+28.0520 	EXP 	text_fb_task: height = np.float64(0.05)
+28.0520 	EXP 	text_fb_task: height = np.float64(0.05)
+28.0520 	EXP 	text_fb_task: text = 'Верно!'
+28.0520 	EXP 	text_fb_task: autoDraw = True
+28.1759 	EXP 	Device response: <KeyPress from None: t=28.038341500039678, value=right, duration=0.13207583298208192>
+28.3408 	EXP 	Imported tabl_sl.xlsx as conditions, 5 conditions, 1 params
+28.3411 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'q_sl': 'Это было сложно?', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+28.3603 	EXP 	text_fb_task: autoDraw = False
+28.3603 	EXP 	text_fb_task: autoDraw = False
+28.3603 	EXP 	sl_h: markerPos = None
+28.3603 	EXP 	sl_h: markerPos = 5
+28.3603 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+28.3603 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+28.3603 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+28.3603 	EXP 	text_sl: text = 'Это было сложно?'
+28.3603 	EXP 	sl_h: autoDraw = True
+28.3603 	EXP 	text_sl: autoDraw = True
+28.4513 	EXP 	Device response: <KeyPress from None: t=28.441439583024476, value=right, duration=None>
+28.4522 	DATA 	Keypress: right
+28.5910 	EXP 	Device response: <KeyPress from None: t=28.441439583024476, value=right, duration=0.1489151669666171>
+30.1926 	DATA 	Mouse: Left button down, pos=(876,144)
+30.2022 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2103 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2189 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2264 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2343 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2417 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2493 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2520 	DATA 	Mouse:  Left button up, pos=(876,144)
+30.2573 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2672 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.2676 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'q_sl': 'Вы могли контролировать ситуацию?', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+30.2778 	EXP 	sl_h: autoDraw = False
+30.2778 	EXP 	text_sl: autoDraw = False
+30.2778 	EXP 	sl_h: markerPos = None
+30.2778 	EXP 	sl_h: markerPos = 5
+30.2778 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.2778 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.2778 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.2778 	EXP 	text_sl: text = 'Вы могли контролировать ситуацию?'
+30.2778 	EXP 	sl_h: autoDraw = True
+30.2778 	EXP 	text_sl: autoDraw = True
+30.3253 	DATA 	Mouse: Left button down, pos=(876,144)
+30.3401 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3504 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3568 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3668 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3735 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3738 	DATA 	Mouse:  Left button up, pos=(876,144)
+30.3837 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.3842 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'q_sl': 'Насколько результат зависел от Вас?', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+30.3936 	EXP 	sl_h: autoDraw = False
+30.3936 	EXP 	text_sl: autoDraw = False
+30.3936 	EXP 	sl_h: markerPos = None
+30.3936 	EXP 	sl_h: markerPos = 5
+30.3936 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.3936 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.3936 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.3936 	EXP 	text_sl: text = 'Насколько результат зависел от Вас?'
+30.3936 	EXP 	sl_h: autoDraw = True
+30.3936 	EXP 	text_sl: autoDraw = True
+30.4507 	DATA 	Mouse: Left button down, pos=(876,144)
+30.4580 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.4670 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.4746 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.4838 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.4908 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5005 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5029 	DATA 	Mouse:  Left button up, pos=(876,144)
+30.5077 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5161 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5166 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'q_sl': 'Насколько успешно получалось сравнивать квадраты?', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+30.5259 	EXP 	sl_h: autoDraw = False
+30.5259 	EXP 	text_sl: autoDraw = False
+30.5259 	EXP 	sl_h: markerPos = None
+30.5259 	EXP 	sl_h: markerPos = 5
+30.5259 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.5259 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.5259 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.5259 	EXP 	text_sl: text = 'Насколько успешно получалось сравнивать квадраты?'
+30.5259 	EXP 	sl_h: autoDraw = True
+30.5259 	EXP 	text_sl: autoDraw = True
+30.5673 	DATA 	Mouse: Left button down, pos=(876,144)
+30.5738 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5836 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.5901 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6003 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6068 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6171 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6195 	DATA 	Mouse:  Left button up, pos=(876,144)
+30.6241 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6338 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.6342 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'q_sl': 'Вы довольны результатом?', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+30.6424 	EXP 	sl_h: autoDraw = False
+30.6424 	EXP 	text_sl: autoDraw = False
+30.6424 	EXP 	sl_h: markerPos = None
+30.6424 	EXP 	sl_h: markerPos = 5
+30.6424 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.6424 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.6424 	EXP 	text_sl: height = np.float64(0.030000000000000002)
+30.6424 	EXP 	text_sl: text = 'Вы довольны результатом?'
+30.6424 	EXP 	sl_h: autoDraw = True
+30.6424 	EXP 	text_sl: autoDraw = True
+30.6862 	DATA 	Mouse: Left button down, pos=(876,144)
+30.6994 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7064 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7171 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7241 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7339 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7410 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7495 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7499 	DATA 	Mouse:  Left button up, pos=(876,144)
+30.7566 	EXP 	sl_h: markerPos = np.float64(5.151761517615176)
+30.7662 	INFO 	Keyboard events cleared
+30.7661 	EXP 	sl_h: autoDraw = False
+30.7661 	EXP 	text_sl: autoDraw = False
+30.7661 	EXP 	text_5: height = np.float64(0.05)
+30.7661 	EXP 	text_5: height = np.float64(0.05)
+30.7661 	EXP 	text_5: height = np.float64(0.05)
+30.7661 	EXP 	text_5: text = 'Всего правильных ответов:20'
+30.7661 	EXP 	text_5: autoDraw = True
+30.8184 	DATA 	Mouse: Left button down, pos=(876,144)
+30.8865 	DATA 	Mouse:  Left button up, pos=(876,144)
+32.0637 	INFO 	Keyboard events cleared
+32.0635 	EXP 	text_5: autoDraw = False
+32.0635 	EXP 	text_5: autoDraw = False
+32.0635 	EXP 	get_textbox: autoDraw = True
+32.0635 	EXP 	text_6: autoDraw = True
+35.9345 	EXP 	Device response: <KeyPress from None: t=35.93107658298686, value=5, duration=None>
+35.9507 	DATA 	Keypress: 5
+36.0254 	EXP 	Device response: <KeyPress from None: t=35.93107658298686, value=5, duration=0.09001679200446233>
+36.1118 	EXP 	Device response: <KeyPress from None: t=36.103535957983695, value=5, duration=None>
+36.1192 	DATA 	Keypress: 5
+36.1953 	EXP 	Device response: <KeyPress from None: t=36.103535957983695, value=5, duration=0.0879105839994736>
+36.4090 	EXP 	Device response: <KeyPress from None: t=36.4022897920222, value=5, duration=None>
+36.4144 	DATA 	Keypress: 5
+36.5033 	EXP 	Device response: <KeyPress from None: t=36.4022897920222, value=5, duration=0.08269549999386072>
+37.0386 	EXP 	Device response: <KeyPress from None: t=37.0271340830368, value=5, duration=None>
+37.0449 	DATA 	Keypress: 5
+37.1259 	EXP 	Device response: <KeyPress from None: t=37.0271340830368, value=5, duration=0.09665124997263774>
+39.9595 	EXP 	Device response: <KeyPress from None: t=39.95820595801342, value=space, duration=None>
+39.9669 	DATA 	Keypress: space
+39.9847 	EXP 	get_textbox: autoDraw = False
+39.9847 	EXP 	text_6: autoDraw = False
+39.9847 	EXP 	text_th: autoDraw = True
+40.0411 	EXP 	Device response: <KeyPress from None: t=39.95820595801342, value=space, duration=0.08040891698328778>
+40.9758 	EXP 	text_th: autoDraw = False
+40.9758 	EXP 	text_th: autoDraw = False
+40.9759 	EXP 	4_calibr_sum: status = STOPPED
+40.9983 	INFO 	saved data to '/Users/arinasevruk/Desktop/Exp/MyExp/data/_4_calibr_sum_2025-12-30_18h25.10.488.csv'
+40.9995 	INFO 	saved data to /Users/arinasevruk/Desktop/Exp/MyExp/data/_4_calibr_sum_2025-12-30_18h25.10.488.psydat

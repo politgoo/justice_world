@@ -1,4 +1,3 @@
-data
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
@@ -37,8 +36,4 @@ old
 Thumbs.db
 .Spotlight-V100
 .Trashes
-
-# lib files used for local debugging
-/lib/
-/html/lib/
 

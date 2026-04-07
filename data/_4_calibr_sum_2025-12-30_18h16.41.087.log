@@ -1,0 +1,650 @@
+10.0318 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+10.1051 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+25.1877 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+25.1886 	INFO 	Loaded monitor calibration from ['2025_10_28 18:09']
+25.2959 	INFO 	Using renderer 'Apple M4' for graphics
+25.2959 	INFO 	OpenGL version supported by driver is 2..
+25.3173 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x158cd2620>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x158cd25c0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-0.2314, -0.2314, -0.2314]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x158ddf070>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(455.0), np.float64(253.5)], screen=0, size=array([1600, 1200]), stencilBits=8, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+25.3173 	EXP 	window1: backgroundImage = ''
+25.3173 	EXP 	window1: backgroundFit = 'none'
+25.3320 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3400 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3483 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3566 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3647 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3728 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3810 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3891 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.3970 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4053 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4136 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4221 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4302 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4383 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4465 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4547 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4629 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4711 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4792 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4876 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4959 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.4962 	DEBUG 	Uploading Texture Font fontname to graphics card
+25.4992 	DEBUG 	Upload of Texture Font fontname complete
+25.5111 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5193 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5275 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5355 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5437 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5516 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5595 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+25.5595 	DEBUG 	Uploading Texture Font fontname to graphics card
+25.5610 	DEBUG 	Upload of Texture Font fontname complete
+25.5619 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+25.5619 	EXP 	window1: recordFrameIntervals = False
+25.6895 	EXP 	window1: recordFrameIntervals = True
+26.2594 	DATA 	Mouse: Left button down, pos=(434,233)
+26.3215 	DATA 	Mouse:  Left button up, pos=(434,232)
+26.5259 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+26.5459 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.5578 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.5687 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.5787 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.5879 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.5966 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6127 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6207 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6284 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6363 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6442 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6521 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6601 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6681 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6762 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6843 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.6924 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.7004 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.7084 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.7165 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+26.7167 	DEBUG 	Uploading Texture Font fontname to graphics card
+26.7183 	DEBUG 	Upload of Texture Font fontname complete
+26.7461 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+28.9322 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9322 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9323 	INFO 	keyboard.Keyboard is using iohub backend.
+28.9324 	EXP 	4_calibr_sum: status = STARTED
+28.9645 	EXP 	Created main_instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='main_instr_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.9718 	EXP 	Created BJW_inst_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='BJW_inst_text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+28.9857 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9859 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9861 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9863 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9866 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9868 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9870 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9871 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9873 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9875 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9877 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9879 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9881 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9882 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.9904 	DEBUG 	Upload of Texture Font fontname complete
+28.9931 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9933 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9935 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9937 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9940 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9942 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9943 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9944 	DEBUG 	Uploading Texture Font fontname to graphics card
+28.9960 	DEBUG 	Upload of Texture Font fontname complete
+28.9992 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+28.9994 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0009 	DEBUG 	Upload of Texture Font fontname complete
+29.0057 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0059 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0060 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0076 	DEBUG 	Upload of Texture Font fontname complete
+29.0168 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0169 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0185 	DEBUG 	Upload of Texture Font fontname complete
+29.0334 	EXP 	Created BJW_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=True, font='Open Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.02), labelWrapWidth=None, labels=list(...), lineColor=None, markerColor=None, name='BJW_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=3, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='height', win=Window(...))
+29.0339 	EXP 	Created BJW_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='BJW_text', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.0385 	EXP 	Created text_instr = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_instr', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0420 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_3', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0425 	EXP 	Created pol_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='pol_1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+29.0430 	EXP 	Created pol_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='pol_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+29.0471 	EXP 	Created text_tren = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.03), italic=False, languageStyle='LTR', name='text_tren', opacity=1, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0474 	EXP 	Created text_fb_tren = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_fb_tren', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.0498 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_4', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0503 	EXP 	Created sq_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', fillRGB=array([1., 1., 1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='sq_1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+29.0509 	EXP 	Created sq_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='sq_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+29.0526 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.03), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0530 	EXP 	Created text_fb_task = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_fb_task', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.0575 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0578 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0581 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0583 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0586 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0588 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0589 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0592 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0593 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0596 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0597 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0618 	DEBUG 	Upload of Texture Font fontname complete
+29.0645 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0648 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0651 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0654 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0657 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0659 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0661 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0662 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0677 	DEBUG 	Upload of Texture Font fontname complete
+29.0704 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0707 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+29.0707 	DEBUG 	Uploading Texture Font fontname to graphics card
+29.0723 	DEBUG 	Upload of Texture Font fontname complete
+29.0816 	EXP 	Created sl_h = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=0, fillColor=None, flip=True, font='Open Sans', granularity=0.0, labelColor=None, labelHeight=np.float64(0.03), labelWrapWidth=None, labels=['совсем нет', 'очень'], lineColor=None, markerColor=None, name='sl_h', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=5, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7, 8, 9]), units='height', win=Window(...))
+29.0820 	EXP 	Created text_sl = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_sl', opacity=1, ori=0.0, pos=array([0. , 0.2]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.0823 	EXP 	Created text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_5', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+29.0952 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_6', opacity=1, ori=0.0, pos=array([0.  , 0.01]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+29.0977 	EXP 	Created text_th = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.04), italic=False, languageStyle='LTR', name='text_th', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Спасибо за участие!\n', units='height', win=Window(...), wrapWidth=1)
+0.0055 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+0.0060 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+0.0062 	DEBUG 	Uploading Texture Font fontname to graphics card
+0.0085 	DEBUG 	Upload of Texture Font fontname complete
+0.0089 	DATA 	Keypress: space
+0.0296 	EXP 	BJW_slider: autoLog = True
+0.0296 	EXP 	BJW_slider: styleTweaks = []
+0.0296 	EXP 	BJW_slider: styleTweaks = []
+0.0296 	EXP 	BJW_slider: styleTweaks = []
+0.0296 	EXP 	BJW_slider: styleTweaks = []
+0.0296 	EXP 	BJW_slider: contrast = 1.0
+0.0296 	EXP 	BJW_slider: markerPos = 3
+0.0296 	EXP 	BJW_slider: autoLog = True
+0.0296 	EXP 	sl_h: autoLog = True
+0.0296 	EXP 	sl_h: styleTweaks = []
+0.0296 	EXP 	sl_h: styleTweaks = []
+0.0296 	EXP 	sl_h: styleTweaks = []
+0.0296 	EXP 	sl_h: styleTweaks = []
+0.0296 	EXP 	sl_h: contrast = 1.0
+0.0296 	EXP 	sl_h: markerPos = 5
+0.0296 	EXP 	sl_h: autoLog = True
+0.0296 	EXP 	get_textbox: autoLog = True
+0.0439 	INFO 	Keyboard events cleared
+0.0436 	EXP 	main_instr_text: autoDraw = True
+2.5225 	WARNING 	t of last frame was 78.45ms (=1/12)
+4.7124 	EXP 	Device response: <KeyPress from None: t=4.676364207989536, value=space, duration=None>
+4.7199 	DATA 	Keypress: space
+4.7241 	INFO 	Keyboard events cleared
+4.7239 	WARNING 	t of last frame was 45.96ms (=1/21)
+4.7239 	EXP 	main_instr_text: autoDraw = False
+4.7239 	EXP 	BJW_inst_text: autoDraw = True
+4.7566 	EXP 	Device response: <KeyPress from None: t=4.676364207989536, value=space, duration=0.07031662500230595>
+5.0618 	EXP 	Device response: <KeyPress from None: t=5.059418416989502, value=space, duration=None>
+5.0688 	DEBUG 	Read excel file with openpyxl: BJW.xlsx
+5.0690 	EXP 	Imported BJW.xlsx as conditions, 13 conditions, 1 params
+5.0695 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'Text': 'Я считаю, что, по большому счету, заслуживаю того, что происходит со мной.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+5.0822 	DATA 	Keypress: space
+5.0953 	WARNING 	t of last frame was 35.69ms (=1/28)
+5.0953 	EXP 	BJW_inst_text: autoDraw = False
+5.0953 	EXP 	BJW_slider: markerPos = None
+5.0953 	EXP 	BJW_slider: markerPos = 3
+5.0953 	EXP 	BJW_text: height = np.float64(0.03)
+5.0953 	EXP 	BJW_text: height = np.float64(0.03)
+5.0953 	EXP 	BJW_text: height = np.float64(0.03)
+5.0953 	EXP 	BJW_text: text = 'Я считаю, что, по большому счету, заслуживаю того, что происходит со мной.'
+5.0953 	EXP 	BJW_slider: autoDraw = True
+5.0953 	EXP 	BJW_text: autoDraw = True
+5.1464 	EXP 	Device response: <KeyPress from None: t=5.059418416989502, value=space, duration=0.0808189160306938>
+7.0249 	DATA 	Mouse: Left button down, pos=(419,60)
+7.0374 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0440 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0542 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0610 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0710 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0776 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.0787 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.0875 	EXP 	BJW_slider: markerPos = 3.0
+7.0887 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'Text': 'Как правило, жизнь ко\xa0мне справедлива.', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+7.0969 	EXP 	BJW_slider: autoDraw = False
+7.0969 	EXP 	BJW_text: autoDraw = False
+7.0969 	EXP 	BJW_slider: markerPos = None
+7.0969 	EXP 	BJW_slider: markerPos = 3
+7.0969 	EXP 	BJW_text: height = np.float64(0.03)
+7.0969 	EXP 	BJW_text: height = np.float64(0.03)
+7.0969 	EXP 	BJW_text: height = np.float64(0.03)
+7.0969 	EXP 	BJW_text: text = 'Как правило, жизнь ко\xa0мне справедлива.'
+7.0969 	EXP 	BJW_slider: autoDraw = True
+7.0969 	EXP 	BJW_text: autoDraw = True
+7.1722 	DATA 	Mouse: Left button down, pos=(419,60)
+7.1782 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.1876 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.1943 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.2044 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.2110 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.2211 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.2275 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.2286 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.2376 	EXP 	BJW_slider: markerPos = 3.0
+7.2387 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'Text': 'Я верю, что обычно получаю то, что заслуживаю.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+7.2460 	EXP 	BJW_slider: autoDraw = False
+7.2460 	EXP 	BJW_text: autoDraw = False
+7.2460 	EXP 	BJW_slider: markerPos = None
+7.2460 	EXP 	BJW_slider: markerPos = 3
+7.2460 	EXP 	BJW_text: height = np.float64(0.03)
+7.2460 	EXP 	BJW_text: height = np.float64(0.03)
+7.2460 	EXP 	BJW_text: height = np.float64(0.03)
+7.2460 	EXP 	BJW_text: text = 'Я верю, что обычно получаю то, что заслуживаю.'
+7.2460 	EXP 	BJW_slider: autoDraw = True
+7.2460 	EXP 	BJW_text: autoDraw = True
+7.3053 	DATA 	Mouse: Left button down, pos=(419,60)
+7.3112 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.3211 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.3282 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.3375 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.3417 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.3446 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.3543 	EXP 	BJW_slider: markerPos = 3.0
+7.3554 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'Text': 'В моей жизни в\xa0общем и\xa0целом всё происходит справедливо.', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+7.3633 	EXP 	BJW_slider: autoDraw = False
+7.3633 	EXP 	BJW_text: autoDraw = False
+7.3633 	EXP 	BJW_slider: markerPos = None
+7.3633 	EXP 	BJW_slider: markerPos = 3
+7.3633 	EXP 	BJW_text: height = np.float64(0.03)
+7.3633 	EXP 	BJW_text: height = np.float64(0.03)
+7.3633 	EXP 	BJW_text: height = np.float64(0.03)
+7.3633 	EXP 	BJW_text: text = 'В моей жизни в\xa0общем и\xa0целом всё происходит справедливо.'
+7.3633 	EXP 	BJW_slider: autoDraw = True
+7.3633 	EXP 	BJW_text: autoDraw = True
+7.4250 	DATA 	Mouse: Left button down, pos=(419,60)
+7.4377 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4443 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4545 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4612 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4711 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4753 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.4785 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.4875 	EXP 	BJW_slider: markerPos = 3.0
+7.4886 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'Text': 'В моей жизни несправедливость – скорее исключение, чем правило.', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+7.4959 	EXP 	BJW_slider: autoDraw = False
+7.4959 	EXP 	BJW_text: autoDraw = False
+7.4959 	EXP 	BJW_slider: markerPos = None
+7.4959 	EXP 	BJW_slider: markerPos = 3
+7.4959 	EXP 	BJW_text: height = np.float64(0.03)
+7.4959 	EXP 	BJW_text: height = np.float64(0.03)
+7.4959 	EXP 	BJW_text: height = np.float64(0.03)
+7.4959 	EXP 	BJW_text: text = 'В моей жизни несправедливость – скорее исключение, чем правило.'
+7.4959 	EXP 	BJW_slider: autoDraw = True
+7.4959 	EXP 	BJW_text: autoDraw = True
+7.5553 	DATA 	Mouse: Left button down, pos=(419,60)
+7.5613 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.5707 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.5776 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.5879 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.5950 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.6042 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.6053 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.6112 	EXP 	BJW_slider: markerPos = 3.0
+7.6123 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'Text': 'Я считаю, что в\xa0целом в\xa0моей жизни всё справедливо.', 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+7.6205 	EXP 	BJW_slider: autoDraw = False
+7.6205 	EXP 	BJW_text: autoDraw = False
+7.6205 	EXP 	BJW_slider: markerPos = None
+7.6205 	EXP 	BJW_slider: markerPos = 3
+7.6205 	EXP 	BJW_text: height = np.float64(0.03)
+7.6205 	EXP 	BJW_text: height = np.float64(0.03)
+7.6205 	EXP 	BJW_text: height = np.float64(0.03)
+7.6205 	EXP 	BJW_text: text = 'Я считаю, что в\xa0целом в\xa0моей жизни всё справедливо.'
+7.6205 	EXP 	BJW_slider: autoDraw = True
+7.6205 	EXP 	BJW_text: autoDraw = True
+7.6889 	DATA 	Mouse: Left button down, pos=(419,60)
+7.6947 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7042 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7108 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7208 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7280 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7321 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.7378 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.7447 	EXP 	BJW_slider: markerPos = 3.0
+7.7458 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'Text': 'Я думаю, что важные решения, которые касаются меня, обычно справедливы.', 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+7.7538 	EXP 	BJW_slider: autoDraw = False
+7.7538 	EXP 	BJW_text: autoDraw = False
+7.7538 	EXP 	BJW_slider: markerPos = None
+7.7538 	EXP 	BJW_slider: markerPos = 3
+7.7538 	EXP 	BJW_text: height = np.float64(0.03)
+7.7538 	EXP 	BJW_text: height = np.float64(0.03)
+7.7538 	EXP 	BJW_text: height = np.float64(0.03)
+7.7538 	EXP 	BJW_text: text = 'Я думаю, что важные решения, которые касаются меня, обычно справедливы.'
+7.7538 	EXP 	BJW_slider: autoDraw = True
+7.7538 	EXP 	BJW_text: autoDraw = True
+7.8143 	DATA 	Mouse: Left button down, pos=(419,60)
+7.8276 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8378 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8445 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8547 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8621 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8663 	DATA 	Mouse:  Left button up, pos=(419,60)
+7.8705 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.8770 	EXP 	BJW_slider: markerPos = 3.0
+7.8781 	EXP 	New trial (rep=0, index=7): <Trial 7 (7 in rep 0) data={'Text': 'Я считаю, что в\xa0целом мир справедлив.', 'thisN': 7, 'thisTrialN': 7, 'thisRepN': 0}>
+7.8873 	EXP 	BJW_slider: autoDraw = False
+7.8873 	EXP 	BJW_text: autoDraw = False
+7.8873 	EXP 	BJW_slider: markerPos = None
+7.8873 	EXP 	BJW_slider: markerPos = 3
+7.8873 	EXP 	BJW_text: height = np.float64(0.03)
+7.8873 	EXP 	BJW_text: height = np.float64(0.03)
+7.8873 	EXP 	BJW_text: height = np.float64(0.03)
+7.8873 	EXP 	BJW_text: text = 'Я считаю, что в\xa0целом мир справедлив.'
+7.8873 	EXP 	BJW_slider: autoDraw = True
+7.8873 	EXP 	BJW_text: autoDraw = True
+7.9618 	DATA 	Mouse: Left button down, pos=(419,60)
+7.9710 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.9775 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.9876 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+7.9947 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.0042 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.0086 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.0119 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.0213 	EXP 	BJW_slider: markerPos = 3.0
+8.0225 	EXP 	New trial (rep=0, index=8): <Trial 8 (8 in rep 0) data={'Text': 'Я считаю, что, по\xa0большому счету, люди получают то, что заслуживают.', 'thisN': 8, 'thisTrialN': 8, 'thisRepN': 0}>
+8.0305 	EXP 	BJW_slider: autoDraw = False
+8.0305 	EXP 	BJW_text: autoDraw = False
+8.0305 	EXP 	BJW_slider: markerPos = None
+8.0305 	EXP 	BJW_slider: markerPos = 3
+8.0305 	EXP 	BJW_text: height = np.float64(0.03)
+8.0305 	EXP 	BJW_text: height = np.float64(0.03)
+8.0305 	EXP 	BJW_text: height = np.float64(0.03)
+8.0305 	EXP 	BJW_text: text = 'Я считаю, что, по\xa0большому счету, люди получают то, что заслуживают.'
+8.0305 	EXP 	BJW_slider: autoDraw = True
+8.0305 	EXP 	BJW_text: autoDraw = True
+8.0746 	DATA 	Mouse: Left button down, pos=(419,60)
+8.0878 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.0943 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1045 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1114 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1211 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1279 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1374 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.1385 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.1444 	EXP 	BJW_slider: markerPos = 3.0
+8.1455 	EXP 	New trial (rep=0, index=9): <Trial 9 (9 in rep 0) data={'Text': 'Я уверен, что справедливость всегда побеждает несправедливость.', 'thisN': 9, 'thisTrialN': 9, 'thisRepN': 0}>
+8.1544 	EXP 	BJW_slider: autoDraw = False
+8.1544 	EXP 	BJW_text: autoDraw = False
+8.1544 	EXP 	BJW_slider: markerPos = None
+8.1544 	EXP 	BJW_slider: markerPos = 3
+8.1544 	EXP 	BJW_text: height = np.float64(0.03)
+8.1544 	EXP 	BJW_text: height = np.float64(0.03)
+8.1544 	EXP 	BJW_text: height = np.float64(0.03)
+8.1544 	EXP 	BJW_text: text = 'Я уверен, что справедливость всегда побеждает несправедливость.'
+8.1544 	EXP 	BJW_slider: autoDraw = True
+8.1544 	EXP 	BJW_text: autoDraw = True
+8.2249 	DATA 	Mouse: Left button down, pos=(419,60)
+8.2376 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2442 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2544 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2609 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2709 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2774 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.2785 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.2879 	EXP 	BJW_slider: markerPos = 3.0
+8.2890 	EXP 	New trial (rep=0, index=10): <Trial 10 (10 in rep 0) data={'Text': 'Я убежден, что, если человек пережил несправедливость, в\xa0будущем это возместится.', 'thisN': 10, 'thisTrialN': 10, 'thisRepN': 0}>
+8.2966 	EXP 	BJW_slider: autoDraw = False
+8.2966 	EXP 	BJW_text: autoDraw = False
+8.2966 	EXP 	BJW_slider: markerPos = None
+8.2966 	EXP 	BJW_slider: markerPos = 3
+8.2966 	EXP 	BJW_text: height = np.float64(0.03)
+8.2966 	EXP 	BJW_text: height = np.float64(0.03)
+8.2966 	EXP 	BJW_text: height = np.float64(0.03)
+8.2966 	EXP 	BJW_text: text = 'Я убежден, что, если человек пережил несправедливость, в\xa0будущем это возместится.'
+8.2966 	EXP 	BJW_slider: autoDraw = True
+8.2966 	EXP 	BJW_text: autoDraw = True
+8.3619 	DATA 	Mouse: Left button down, pos=(419,60)
+8.3707 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.3775 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.3876 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.3945 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.4039 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.4111 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.4135 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.4374 	WARNING 	t of last frame was 26.27ms (=1/38)
+8.4374 	EXP 	BJW_slider: markerPos = 3.0
+8.4392 	EXP 	New trial (rep=0, index=11): <Trial 11 (11 in rep 0) data={'Text': 'Я твердо уверен, что несправедливость в\xa0самых разных жизненных ситуациях (в семье, учебе и\xa0т. д.) – скорее исключение, чем правило.', 'thisN': 11, 'thisTrialN': 11, 'thisRepN': 0}>
+8.4486 	EXP 	BJW_slider: autoDraw = False
+8.4486 	EXP 	BJW_text: autoDraw = False
+8.4486 	EXP 	BJW_slider: markerPos = None
+8.4486 	EXP 	BJW_slider: markerPos = 3
+8.4486 	EXP 	BJW_text: height = np.float64(0.03)
+8.4486 	EXP 	BJW_text: height = np.float64(0.03)
+8.4486 	EXP 	BJW_text: height = np.float64(0.03)
+8.4486 	EXP 	BJW_text: text = 'Я твердо уверен, что несправедливость в\xa0самых разных жизненных ситуациях (в семье, учебе и\xa0т. д.) – скорее исключение, чем правило.'
+8.4486 	EXP 	BJW_slider: autoDraw = True
+8.4486 	EXP 	BJW_text: autoDraw = True
+8.4706 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+8.4950 	DATA 	Mouse: Left button down, pos=(419,60)
+8.5038 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5110 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5205 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5275 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5372 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5439 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5539 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5588 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.5613 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.5705 	EXP 	BJW_slider: markerPos = 3.0
+8.5720 	EXP 	New trial (rep=0, index=12): <Trial 12 (12 in rep 0) data={'Text': 'Я думаю, что все, кто принимает важные решения, стремятся быть справедливыми.', 'thisN': 12, 'thisTrialN': 12, 'thisRepN': 0}>
+8.5803 	EXP 	BJW_slider: autoDraw = False
+8.5803 	EXP 	BJW_text: autoDraw = False
+8.5803 	EXP 	BJW_slider: markerPos = None
+8.5803 	EXP 	BJW_slider: markerPos = 3
+8.5803 	EXP 	BJW_text: height = np.float64(0.03)
+8.5803 	EXP 	BJW_text: height = np.float64(0.03)
+8.5803 	EXP 	BJW_text: height = np.float64(0.03)
+8.5803 	EXP 	BJW_text: text = 'Я думаю, что все, кто принимает важные решения, стремятся быть справедливыми.'
+8.5803 	EXP 	BJW_slider: autoDraw = True
+8.5803 	EXP 	BJW_text: autoDraw = True
+8.6418 	DATA 	Mouse: Left button down, pos=(419,60)
+8.6539 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.6611 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.6705 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.6773 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.6872 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.6943 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.7038 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.7085 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.7110 	EXP 	BJW_slider: markerPos = np.float64(3.1266666666666665)
+8.7205 	EXP 	BJW_slider: markerPos = 3.0
+8.7246 	EXP 	BJW_slider: autoDraw = False
+8.7246 	EXP 	BJW_text: autoDraw = False
+8.7246 	EXP 	text_instr: autoDraw = True
+8.7886 	DATA 	Mouse: Left button down, pos=(419,60)
+8.8419 	DATA 	Mouse:  Left button up, pos=(419,60)
+8.9253 	DATA 	Mouse: Left button down, pos=(419,60)
+8.9754 	DATA 	Mouse:  Left button up, pos=(419,60)
+9.8272 	EXP 	Device response: <KeyPress from None: t=9.82341945799999, value=space, duration=None>
+9.8290 	DATA 	Keypress: space
+9.8374 	INFO 	Keyboard events cleared
+9.8372 	EXP 	text_instr: autoDraw = False
+9.8372 	EXP 	text_3: autoDraw = True
+9.9221 	EXP 	Device response: <KeyPress from None: t=9.82341945799999, value=space, duration=0.0941231669858098>
+10.3421 	EXP 	Device response: <KeyPress from None: t=10.341158958035521, value=space, duration=None>
+10.3452 	DEBUG 	Read excel file with openpyxl: trening2.xlsx
+10.3460 	EXP 	Imported trening2.xlsx as conditions, 7 conditions, 12 params
+10.3462 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'w1': 0.17, 'w2': 0.16, 'corr_answ': 'left', 'op1': 0.3, 'op2': 0.18, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 5, 'or2': 45, 'time': 1.0, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+10.3489 	DATA 	Keypress: space
+10.3539 	EXP 	text_3: autoDraw = False
+10.3539 	EXP 	pol_1: ori = np.float64(5.0)
+10.3539 	EXP 	pol_2: ori = np.float64(45.0)
+10.3539 	EXP 	pol_1: autoDraw = True
+10.3539 	EXP 	pol_2: autoDraw = True
+10.3539 	EXP 	text_tren: autoDraw = True
+10.4221 	EXP 	Device response: <KeyPress from None: t=10.341158958035521, value=space, duration=0.07589183398522437>
+11.0079 	EXP 	Device response: <KeyPress from None: t=11.001362667011563, value=right, duration=None>
+11.0334 	DATA 	Keypress: right
+11.0467 	EXP 	pol_1: autoDraw = False
+11.0467 	EXP 	pol_2: autoDraw = False
+11.0467 	EXP 	text_tren: autoDraw = False
+11.0467 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.0467 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.0467 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.0467 	EXP 	text_fb_tren: text = 'Увы('
+11.0467 	EXP 	text_fb_tren: autoDraw = True
+11.1222 	EXP 	Device response: <KeyPress from None: t=11.001362667011563, value=right, duration=0.11214041599305347>
+11.5117 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'w1': 0.24, 'w2': 0.25, 'corr_answ': 'right', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.3, 'yPos1': -0.2, 'xPos2': 0.3, 'yPos2': 0.2, 'or1': 0, 'or2': 45, 'time': 1.5, 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+11.5205 	EXP 	text_fb_tren: autoDraw = False
+11.5205 	EXP 	pol_1: ori = np.float64(0.0)
+11.5205 	EXP 	pol_2: ori = np.float64(45.0)
+11.5205 	EXP 	pol_1: autoDraw = True
+11.5205 	EXP 	pol_2: autoDraw = True
+11.5205 	EXP 	text_tren: autoDraw = True
+11.8073 	EXP 	Device response: <KeyPress from None: t=11.806632583029568, value=right, duration=None>
+11.8102 	DATA 	Keypress: right
+11.8120 	EXP 	pol_1: autoDraw = False
+11.8120 	EXP 	pol_2: autoDraw = False
+11.8120 	EXP 	text_tren: autoDraw = False
+11.8120 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.8120 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.8120 	EXP 	text_fb_tren: height = np.float64(0.03)
+11.8120 	EXP 	text_fb_tren: text = 'Верно!'
+11.8120 	EXP 	text_fb_tren: autoDraw = True
+11.9237 	EXP 	Device response: <KeyPress from None: t=11.806632583029568, value=right, duration=0.11096258397446945>
+12.3085 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'w1': 0.22, 'w2': 0.21, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.8, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 45, 'or2': 5, 'time': 1.0, 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+12.3140 	EXP 	text_fb_tren: autoDraw = False
+12.3140 	EXP 	pol_1: ori = np.float64(45.0)
+12.3140 	EXP 	pol_2: ori = np.float64(5.0)
+12.3140 	EXP 	pol_1: autoDraw = True
+12.3140 	EXP 	pol_2: autoDraw = True
+12.3140 	EXP 	text_tren: autoDraw = True
+12.3573 	EXP 	Device response: <KeyPress from None: t=12.349286000011489, value=right, duration=None>
+12.3596 	DATA 	Keypress: right
+12.3624 	EXP 	pol_1: autoDraw = False
+12.3624 	EXP 	pol_2: autoDraw = False
+12.3624 	EXP 	text_tren: autoDraw = False
+12.3624 	EXP 	text_fb_tren: height = np.float64(0.03)
+12.3624 	EXP 	text_fb_tren: height = np.float64(0.03)
+12.3624 	EXP 	text_fb_tren: height = np.float64(0.03)
+12.3624 	EXP 	text_fb_tren: text = 'Увы('
+12.3624 	EXP 	text_fb_tren: autoDraw = True
+12.4631 	EXP 	Device response: <KeyPress from None: t=12.349286000011489, value=right, duration=0.11175420798826963>
+12.8580 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'w1': 0.28, 'w2': 0.27, 'corr_answ': 'left', 'op1': 0.13, 'op2': 0.85, 'xPos1': -0.18, 'yPos1': -0.22, 'xPos2': 0.18, 'yPos2': 0.18, 'or1': 5, 'or2': 45, 'time': 1.5, 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+12.8629 	EXP 	text_fb_tren: autoDraw = False
+12.8629 	EXP 	pol_1: ori = np.float64(5.0)
+12.8629 	EXP 	pol_2: ori = np.float64(45.0)
+12.8629 	EXP 	pol_1: autoDraw = True
+12.8629 	EXP 	pol_2: autoDraw = True
+12.8629 	EXP 	text_tren: autoDraw = True
+12.9903 	EXP 	Device response: <KeyPress from None: t=12.988786333007738, value=right, duration=None>
+12.9915 	DATA 	Keypress: right
+12.9941 	EXP 	pol_1: autoDraw = False
+12.9941 	EXP 	pol_2: autoDraw = False
+12.9941 	EXP 	text_tren: autoDraw = False
+12.9941 	EXP 	text_fb_tren: text = 'Увы('
+12.9941 	EXP 	text_fb_tren: autoDraw = True
+13.1128 	EXP 	Device response: <KeyPress from None: t=12.988786333007738, value=right, duration=0.12044270901242271>
+13.4898 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'w1': 0.22, 'w2': 0.23, 'corr_answ': 'right', 'op1': 0.15, 'op2': 0.5, 'xPos1': -0.2, 'yPos1': 0.15, 'xPos2': 0.2, 'yPos2': -0.18, 'or1': 45, 'or2': 3, 'time': 1.5, 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+13.4938 	EXP 	text_fb_tren: autoDraw = False
+13.4938 	EXP 	text_fb_tren: autoDraw = False
+13.4938 	EXP 	pol_1: ori = np.float64(45.0)
+13.4938 	EXP 	pol_2: ori = np.float64(3.0)
+13.4938 	EXP 	pol_1: autoDraw = True
+13.4938 	EXP 	pol_2: autoDraw = True
+13.4938 	EXP 	text_tren: autoDraw = True
+13.6391 	EXP 	Device response: <KeyPress from None: t=13.637279374990612, value=right, duration=None>
+13.6413 	DATA 	Keypress: right
+13.6439 	EXP 	pol_1: autoDraw = False
+13.6439 	EXP 	pol_2: autoDraw = False
+13.6439 	EXP 	text_tren: autoDraw = False
+13.6439 	EXP 	text_fb_tren: height = np.float64(0.03)
+13.6439 	EXP 	text_fb_tren: height = np.float64(0.03)
+13.6439 	EXP 	text_fb_tren: height = np.float64(0.03)
+13.6439 	EXP 	text_fb_tren: text = 'Верно!'
+13.6439 	EXP 	text_fb_tren: autoDraw = True
+13.7569 	EXP 	Device response: <KeyPress from None: t=13.637279374990612, value=right, duration=0.11685991700505838>
+14.1385 	EXP 	New trial (rep=0, index=5): <Trial 5 (5 in rep 0) data={'w1': 0.16, 'w2': 0.15, 'corr_answ': 'left', 'op1': 0.17, 'op2': 0.7, 'xPos1': -0.3, 'yPos1': -0.22, 'xPos2': 0.3, 'yPos2': 0.18, 'or1': 6, 'or2': 47, 'time': 1.0, 'thisN': 5, 'thisTrialN': 5, 'thisRepN': 0}>
+14.1419 	EXP 	text_fb_tren: autoDraw = False
+14.1419 	EXP 	text_fb_tren: autoDraw = False
+14.1419 	EXP 	pol_1: ori = np.float64(6.0)
+14.1419 	EXP 	pol_2: ori = np.float64(47.0)
+14.1419 	EXP 	pol_1: autoDraw = True
+14.1419 	EXP 	pol_2: autoDraw = True
+14.1419 	EXP 	text_tren: autoDraw = True
+14.2739 	EXP 	Device response: <KeyPress from None: t=14.261116874986328, value=right, duration=None>
+14.2762 	DATA 	Keypress: right
+14.2788 	EXP 	pol_1: autoDraw = False
+14.2788 	EXP 	pol_2: autoDraw = False
+14.2788 	EXP 	text_tren: autoDraw = False
+14.2788 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.2788 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.2788 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.2788 	EXP 	text_fb_tren: text = 'Увы('
+14.2788 	EXP 	text_fb_tren: autoDraw = True
+14.4222 	EXP 	Device response: <KeyPress from None: t=14.261116874986328, value=right, duration=0.15610283304704353>
+14.7737 	EXP 	New trial (rep=0, index=6): <Trial 6 (6 in rep 0) data={'w1': 0.21, 'w2': 0.22, 'corr_answ': 'right', 'op1': 0.54, 'op2': 0.22, 'xPos1': -0.2, 'yPos1': 0.21, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 37, 'or2': 7, 'time': 1.5, 'thisN': 6, 'thisTrialN': 6, 'thisRepN': 0}>
+14.7774 	EXP 	text_fb_tren: autoDraw = False
+14.7774 	EXP 	text_fb_tren: autoDraw = False
+14.7774 	EXP 	pol_1: ori = np.float64(37.0)
+14.7774 	EXP 	pol_2: ori = np.float64(7.0)
+14.7774 	EXP 	pol_1: autoDraw = True
+14.7774 	EXP 	pol_2: autoDraw = True
+14.7774 	EXP 	text_tren: autoDraw = True
+14.8234 	EXP 	Device response: <KeyPress from None: t=14.814108333026525, value=right, duration=None>
+14.8253 	DATA 	Keypress: right
+14.8280 	EXP 	pol_1: autoDraw = False
+14.8280 	EXP 	pol_2: autoDraw = False
+14.8280 	EXP 	text_tren: autoDraw = False
+14.8280 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.8280 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.8280 	EXP 	text_fb_tren: height = np.float64(0.03)
+14.8280 	EXP 	text_fb_tren: text = 'Верно!'
+14.8280 	EXP 	text_fb_tren: autoDraw = True
+14.9588 	EXP 	Device response: <KeyPress from None: t=14.814108333026525, value=right, duration=0.1422000839957036>
+15.3205 	EXP 	text_fb_tren: autoDraw = False
+15.3205 	EXP 	text_fb_tren: autoDraw = False
+15.3205 	EXP 	text_4: autoDraw = True
+15.4112 	EXP 	Device response: <KeyPress from None: t=15.407367292034905, value=right, duration=None>
+15.4121 	DATA 	Keypress: right
+15.5553 	EXP 	Device response: <KeyPress from None: t=15.407367292034905, value=right, duration=0.14429549995111302>
+15.9616 	EXP 	Device response: <KeyPress from None: t=15.957924749993253, value=right, duration=None>
+15.9626 	DATA 	Keypress: right
+16.1112 	EXP 	Device response: <KeyPress from None: t=15.957924749993253, value=right, duration=0.15262016700580716>
+16.4928 	EXP 	Device response: <KeyPress from None: t=16.491124042018782, value=space, duration=None>
+16.4979 	DEBUG 	Read excel file with openpyxl: tab_task_4.xlsx
+16.5018 	EXP 	Imported tab_task_4.xlsx as conditions, 40 conditions, 12 params
+16.5021 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'w1': 0.17, 'w2': 0.18, 'corr_answ': 'right', 'op1': 0.5, 'op2': 0.2, 'xPos1': -0.2, 'yPos1': -0.22, 'xPos2': 0.2, 'yPos2': 0.18, 'or1': 7, 'or2': 45, 'time': 0.5, 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+16.5056 	DATA 	Keypress: space
+16.5083 	EXP 	text_4: autoDraw = False
+16.5083 	EXP 	sq_1: ori = np.float64(7.0)
+16.5083 	EXP 	sq_2: ori = np.float64(45.0)
+16.5083 	EXP 	sq_1: autoDraw = True
+16.5083 	EXP 	sq_2: autoDraw = True
+16.5083 	EXP 	text: autoDraw = True
+16.5759 	EXP 	Device response: <KeyPress from None: t=16.491124042018782, value=space, duration=0.08129150001332164>
+17.0039 	EXP 	sq_1: autoDraw = False
+17.0039 	EXP 	sq_2: autoDraw = False
+17.0039 	EXP 	text: autoDraw = False
+17.0039 	EXP 	sq_1: autoDraw = False
+17.0039 	EXP 	sq_2: autoDraw = False
+17.0039 	EXP 	text: autoDraw = False
+17.0039 	EXP 	text_fb_task: height = np.float64(0.05)
+17.0039 	EXP 	text_fb_task: height = np.float64(0.05)
+17.0039 	EXP 	text_fb_task: height = np.float64(0.05)
+17.0039 	EXP 	text_fb_task: text = 'Не успели'
+17.0039 	EXP 	text_fb_task: autoDraw = True
+17.0403 	EXP 	Device response: <KeyPress from None: t=17.03498891700292, value=right, duration=None>
+17.0412 	DATA 	Keypress: right
+17.1784 	EXP 	Device response: <KeyPress from None: t=17.03498891700292, value=right, duration=0.13942441600374877>
+17.8923 	DEBUG 	Saving data for 4_calibr_sum ExperimentHandler
+17.8930 	INFO 	saved data to /Users/arinasevruk/Desktop/Exp/MyExp/data/_4_calibr_sum_2025-12-30_18h16.41.087.psydat
+17.8947 	INFO 	saved data to '/Users/arinasevruk/Desktop/Exp/MyExp/data/_4_calibr_sum_2025-12-30_18h16.41.087.csv'
