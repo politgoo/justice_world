@@ -243,7 +243,7 @@ async function experimentInit() {
   BJWClock = new util.Clock();
   BJW_slider = new visual.Slider({
     win: psychoJS.window, name: 'BJW_slider',
-    startValue: 3,
+    startValue: [3, 5],
     size: [1.0, 0.1], pos: [0, (- 0.4)], ori: 0.0, units: psychoJS.window.units,
     labels: ["\u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RATING"],
@@ -497,7 +497,7 @@ async function experimentInit() {
   text_6 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_6',
-    text: 'Введите номер строки для учета баллов (для студентов РАНХиГСа) и/ или нажмите на пробел для завершения:',
+    text: 'Для студентов РАНХиГСа - введите номер строки для учета баллов , для нестудентов - 2 любые буквы и нажмите на пробел для завершения:',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0.2], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
@@ -512,7 +512,7 @@ async function experimentInit() {
     text: '',
     placeholder: undefined,
     font: 'Arial',
-    pos: [0, 0], 
+    pos: [0, 1], 
     draggable: false,
     letterHeight: 0.05,
     lineSpacing: 1.0,
@@ -2988,38 +2988,83 @@ function send_experiment_to_osfRoutineBegin(snapshot) {
         // keep track of whether this Routine was forcibly ended
         routineForceEnded = false;
         send_experiment_to_osfClock.reset(routineTimer.getTime());
-        routineTimer.add(1.000000);
+        routineTimer.add(2.000000);
         send_experiment_to_osfMaxDurationReached = false;
         // update component parameters for each repeat
-        // Disable downloading results to browser
+        // 1. Disable default browser download
         psychoJS._saveResults = 0;
-        // Generate filename for results
-        let filename = psychoJS._experiment._experimentName + '_' +
-        psychoJS._experiment._datetime + '.csv';
-        // Extract data object from experiment
+        
+        // 2. Generate filename
+        let filename = psychoJS._experiment._experimentName + '_' + psychoJS._experiment._datetime + '.csv';
+        
+        // 3. Extract data
         let dataObj = psychoJS._experiment._trialsData;
-        // Convert data object to CSV
-        let data = [Object.keys(dataObj[0])].concat(dataObj).map(it => {
-        return Object.values(it).toString()
-        }).join('\n')
-        // Send data to OSF via DataPipe
-        console.log('Saving data...');
+        
+        // --- CSV CONSTRUCTION START ---
+        const SEP = ';';
+        
+        // Helper to escape values: handles quotes, newlines, and the separator
+        const formatCell = (val) => {
+            if (val === null || val === undefined) return '';
+            
+            // Convert objects/arrays to JSON strings, otherwise to String
+            let str = (typeof val === 'object') ? JSON.stringify(val) : String(val);
+            
+            // Check if the cell needs to be quoted
+            // (contains separator, double quotes, or newlines)
+            if (str.includes(SEP) || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+                // Double up existing quotes and wrap in quotes
+                str = '"' + str.replace(/"/g, '""') + '"';
+            }
+            return str;
+        };
+        
+        // Get headers (column names) from the first trial
+        const headers = Object.keys(dataObj[0]);
+        
+        // Build the CSV string row by row
+        let csvRows = [];
+        
+        // Add header row
+        csvRows.push(headers.join(SEP));
+        
+        // Add data rows
+        for (const rowObj of dataObj) {
+            const rowValues = headers.map(h => formatCell(rowObj[h]));
+            csvRows.push(rowValues.join(SEP));
+        }
+        
+        let data = csvRows.join('\n');
+        // --- CSV CONSTRUCTION END ---
+        
+        // 4. Send to OSF via DataPipe
+        console.log('Saving data via DataPipe...');
         fetch('https://pipe.jspsych.org/api/data', {
-        method: 'POST',
-        headers: {
-        'Content-Type': 'application/json',
-        Accept: '*/*',
-        },
-        body: JSON.stringify({
-        experimentID: 'H1r1lSmRRNeY', // * обновить, указав experiment ID из DATAPIPE на шаге 4.3 *
-        filename: filename,
-        data: data,
-        }),
-        }).then(response => response.json()).then(data => {
-        // Log response aud force experiment end
-        console.log(data);
-        quitPsychoJS();
-        })
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: '*/*',
+            },
+            body: JSON.stringify({
+                experimentID: 'H1r1lSmRRNeY', // Ensure this matches your DataPipe ID
+                filename: filename,
+                data: data,
+            }),
+        }).then(response => {
+            if (response.ok) {
+                console.log('Data saved successfully!');
+            } else {
+                console.error('Data saving failed:', response.statusText);
+            }
+            return response.json();
+        }).then(data => {
+            console.log(data);
+            // Force experiment end after saving
+            quitPsychoJS();
+        }).catch(err => {
+            console.error('Network error during save:', err);
+            quitPsychoJS();
+        });
         psychoJS.experiment.addData('send_experiment_to_osf.started', globalClock.getTime());
         send_experiment_to_osfMaxDuration = null
         // keep track of which components have finished
@@ -3056,7 +3101,7 @@ function send_experiment_to_osfRoutineEachFrame() {
         if (text_7.status === PsychoJS.Status.STARTED) {
         }
         
-        frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;// most of one frame period left
+        frameRemains = 0.0 + 2.0 - psychoJS.window.monitorFramePeriod * 0.75;// most of one frame period left
         if (text_7.status === PsychoJS.Status.STARTED && t >= frameRemains) {
           // keep track of stop time/frame for later
           text_7.tStop = t;  // not accounting for scr refresh
@@ -3107,7 +3152,7 @@ function send_experiment_to_osfRoutineEnd(snapshot) {
             routineTimer.reset();} else if (send_experiment_to_osfMaxDurationReached) {
             send_experiment_to_osfClock.add(send_experiment_to_osfMaxDuration);
         } else {
-            send_experiment_to_osfClock.add(1.000000);
+            send_experiment_to_osfClock.add(2.000000);
         }
         // Routines running outside a loop should always advance the datafile row
         if (currentLoop === psychoJS.experiment) {

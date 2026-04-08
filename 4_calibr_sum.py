@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on Wed Apr  8 19:52:13 2026
+    on Thu Apr  9 00:32:54 2026
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -453,7 +453,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "BJW" ---
     BJW_slider = visual.Slider(win=win, name='BJW_slider',
-        startValue=3, size=(1.0, 0.1), pos=(0, -0.4), units=win.units,
+        startValue=3,5, size=(1.0, 0.1), pos=(0, -0.4), units=win.units,
         labels=['Совершенно не согласен', 'Не согласен', 'Скорее не согласен', 'Скорее согласен', 'Согласен', 'Полностью согласен'], ticks=(1, 2, 3, 4, 5, 6), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor=[1.0000, 1.0000, 1.0000], markerColor='Red', lineColor='White', colorSpace='rgb',
@@ -603,7 +603,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "Get_points" ---
     text_6 = visual.TextStim(win=win, name='text_6',
-        text='Введите номер строки для учета баллов (для студентов РАНХиГСа) и/ или нажмите на пробел для завершения:',
+        text='Для студентов РАНХиГСа - введите номер строки для учета баллов , для нестудентов - 2 любые буквы и нажмите на пробел для завершения:',
         font='Arial',
         pos=(0, 0.2), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
@@ -611,7 +611,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=0.0);
     textbox = visual.TextBox2(
          win, text=None, placeholder=None, font='Arial',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
+         ori=0.0, pos=(0, 1), draggable=False,      letterHeight=0.05,
          size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -3051,7 +3051,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "send_experiment_to_osf" ---
     send_experiment_to_osf.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 1.0:
+    while continueRoutine and routineTimer.getTime() < 2.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -3082,7 +3082,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # if text_7 is stopping this frame...
         if text_7.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_7.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > text_7.tStartRefresh + 2.0-frameTolerance:
                 # keep track of stop time/frame for later
                 text_7.tStop = t  # not accounting for scr refresh
                 text_7.tStopRefresh = tThisFlipGlobal  # on global time
@@ -3138,7 +3138,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     elif send_experiment_to_osf.forceEnded:
         routineTimer.reset()
     else:
-        routineTimer.addTime(-1.000000)
+        routineTimer.addTime(-2.000000)
     thisExp.nextEntry()
     
     # mark experiment as finished
