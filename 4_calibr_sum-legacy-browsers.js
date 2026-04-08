@@ -235,7 +235,7 @@ async function experimentInit() {
   BJWClock = new util.Clock();
   BJW_slider = new visual.Slider({
     win: psychoJS.window, name: 'BJW_slider',
-    startValue: [3, 5],
+    startValue: 3.5,
     size: [1.0, 0.1], pos: [0, (- 0.4)], ori: 0.0, units: psychoJS.window.units,
     labels: ["\u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RATING"],
@@ -504,7 +504,7 @@ async function experimentInit() {
     text: '',
     placeholder: undefined,
     font: 'Arial',
-    pos: [0, 1], 
+    pos: [0, 0.5], 
     draggable: false,
     letterHeight: 0.05,
     lineSpacing: 1.0,
