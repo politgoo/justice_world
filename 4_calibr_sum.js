@@ -1,4 +1,4 @@
-﻿/********************* 
+/********************* 
  * 4_Calibr_Sum *
  *********************/
 
@@ -98,6 +98,9 @@ flowScheduler.add(Get_pointsRoutineEnd());
 flowScheduler.add(thanksRoutineBegin());
 flowScheduler.add(thanksRoutineEachFrame());
 flowScheduler.add(thanksRoutineEnd());
+flowScheduler.add(send_experiment_to_osfRoutineBegin());
+flowScheduler.add(send_experiment_to_osfRoutineEachFrame());
+flowScheduler.add(send_experiment_to_osfRoutineEnd());
 flowScheduler.add(quitPsychoJS, 'Thank you for your patience.', true);
 
 // quit if user presses Cancel in dialog box:
@@ -199,6 +202,8 @@ var textbox;
 var gp_key_resp;
 var thanksClock;
 var text_th;
+var send_experiment_to_osfClock;
+var text_7;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
@@ -240,7 +245,7 @@ async function experimentInit() {
     win: psychoJS.window, name: 'BJW_slider',
     startValue: 3,
     size: [1.0, 0.1], pos: [0, (- 0.4)], ori: 0.0, units: psychoJS.window.units,
-    labels: ["\u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041d\u0435 \u0443\u0432\u0435\u0440\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5],
+    labels: ["\u0421\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u043d\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043a\u043e\u0440\u0435\u0435 \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u0421\u043e\u0433\u043b\u0430\u0441\u0435\u043d", "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d"], fontSize: 0.02, ticks: [1, 2, 3, 4, 5, 6],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color([1.0, 1.0, 1.0]), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
     opacity: undefined, fontFamily: 'Open Sans', bold: true, italic: false, depth: 0, 
@@ -538,6 +543,20 @@ async function experimentInit() {
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], draggable: false, height: 0.04,  wrapWidth: undefined, ori: 0.0,
+    languageStyle: 'LTR',
+    color: new util.Color('white'),  opacity: undefined,
+    depth: 0.0 
+  });
+  
+  // Initialize components for Routine "send_experiment_to_osf"
+  send_experiment_to_osfClock = new util.Clock();
+  text_7 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_7',
+    text: 'Сохраняем данные',
+    font: 'Arial',
+    units: undefined, 
+    pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -2945,6 +2964,150 @@ function thanksRoutineEnd(snapshot) {
             thanksClock.add(thanksMaxDuration);
         } else {
             thanksClock.add(1.000000);
+        }
+        // Routines running outside a loop should always advance the datafile row
+        if (currentLoop === psychoJS.experiment) {
+          psychoJS.experiment.nextEntry(snapshot);
+        }
+        return Scheduler.Event.NEXT;
+      }
+    }
+    
+    
+var send_experiment_to_osfMaxDurationReached;
+var send_experiment_to_osfMaxDuration;
+var send_experiment_to_osfComponents;
+function send_experiment_to_osfRoutineBegin(snapshot) {
+      return async function () {
+        TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
+        
+        //--- Prepare to start Routine 'send_experiment_to_osf' ---
+        t = 0;
+        frameN = -1;
+        continueRoutine = true; // until we're told otherwise
+        // keep track of whether this Routine was forcibly ended
+        routineForceEnded = false;
+        send_experiment_to_osfClock.reset(routineTimer.getTime());
+        routineTimer.add(1.000000);
+        send_experiment_to_osfMaxDurationReached = false;
+        // update component parameters for each repeat
+        // Disable downloading results to browser
+        psychoJS._saveResults = 0;
+        // Generate filename for results
+        let filename = psychoJS._experiment._experimentName + '_' +
+        psychoJS._experiment._datetime + '.csv';
+        // Extract data object from experiment
+        let dataObj = psychoJS._experiment._trialsData;
+        // Convert data object to CSV
+        let data = [Object.keys(databObj[0])].concat(databObj).map(it => {
+        return Object.values(it).toString()
+        }).join('\n')
+        // Send data to OSF via DataPipe
+        console.log('Saving data...');
+        fetch('https://pipe.jspsych.org/api/data', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json',
+        Accept: '*/*',
+        },
+        body: JSON.stringify({
+        experimentID: 'H1r1lSmRRNeY', // * обновить, указав experiment ID из DATAPIPE на шаге 4.3 *
+        filename: filename,
+        data: data,
+        }),
+        }).then(response => response.json()).then(data => {
+        // Log response aud force experiment end
+        console.log(data);
+        quitPsychoJS();
+        })
+        psychoJS.experiment.addData('send_experiment_to_osf.started', globalClock.getTime());
+        send_experiment_to_osfMaxDuration = null
+        // keep track of which components have finished
+        send_experiment_to_osfComponents = [];
+        send_experiment_to_osfComponents.push(text_7);
+        
+        for (const thisComponent of send_experiment_to_osfComponents)
+          if ('status' in thisComponent)
+            thisComponent.status = PsychoJS.Status.NOT_STARTED;
+        return Scheduler.Event.NEXT;
+      }
+    }
+    
+    
+function send_experiment_to_osfRoutineEachFrame() {
+      return async function () {
+        //--- Loop for each frame of Routine 'send_experiment_to_osf' ---
+        // get current time
+        t = send_experiment_to_osfClock.getTime();
+        frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
+        // update/draw components on each frame
+        
+        // *text_7* updates
+        if (t >= 0.0 && text_7.status === PsychoJS.Status.NOT_STARTED) {
+          // keep track of start time/frame for later
+          text_7.tStart = t;  // (not accounting for frame time here)
+          text_7.frameNStart = frameN;  // exact frame index
+          
+          text_7.setAutoDraw(true);
+        }
+        
+        
+        // if text_7 is active this frame...
+        if (text_7.status === PsychoJS.Status.STARTED) {
+        }
+        
+        frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;// most of one frame period left
+        if (text_7.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+          // keep track of stop time/frame for later
+          text_7.tStop = t;  // not accounting for scr refresh
+          text_7.frameNStop = frameN;  // exact frame index
+          // update status
+          text_7.status = PsychoJS.Status.FINISHED;
+          text_7.setAutoDraw(false);
+        }
+        
+        // check for quit (typically the Esc key)
+        if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+          return quitPsychoJS('The [Escape] key was pressed. Goodbye!', false);
+        }
+        
+        // check if the Routine should terminate
+        if (!continueRoutine) {  // a component has requested a forced-end of Routine
+          routineForceEnded = true;
+          return Scheduler.Event.NEXT;
+        }
+        
+        continueRoutine = false;  // reverts to True if at least one component still running
+        for (const thisComponent of send_experiment_to_osfComponents)
+          if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
+            continueRoutine = true;
+            break;
+          }
+        
+        // refresh the screen if continuing
+        if (continueRoutine && routineTimer.getTime() > 0) {
+          return Scheduler.Event.FLIP_REPEAT;
+        } else {
+          return Scheduler.Event.NEXT;
+        }
+      };
+    }
+    
+    
+function send_experiment_to_osfRoutineEnd(snapshot) {
+      return async function () {
+        //--- Ending Routine 'send_experiment_to_osf' ---
+        for (const thisComponent of send_experiment_to_osfComponents) {
+          if (typeof thisComponent.setAutoDraw === 'function') {
+            thisComponent.setAutoDraw(false);
+          }
+        }
+        psychoJS.experiment.addData('send_experiment_to_osf.stopped', globalClock.getTime());
+        if (routineForceEnded) {
+            routineTimer.reset();} else if (send_experiment_to_osfMaxDurationReached) {
+            send_experiment_to_osfClock.add(send_experiment_to_osfMaxDuration);
+        } else {
+            send_experiment_to_osfClock.add(1.000000);
         }
         // Routines running outside a loop should always advance the datafile row
         if (currentLoop === psychoJS.experiment) {
