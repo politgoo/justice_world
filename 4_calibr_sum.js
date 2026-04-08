@@ -2991,75 +2991,6 @@ function send_experiment_to_osfRoutineBegin(snapshot) {
         routineTimer.add(2.000000);
         send_experiment_to_osfMaxDurationReached = false;
         // update component parameters for each repeat
-        // 1. Disable default browser download
-        psychoJS._saveResults = 0;
-        
-        // 2. Generate filename
-        let filename = psychoJS._experiment._experimentName + '_' + psychoJS._experiment._datetime + '.csv';
-        
-        // 3. Extract data
-        let dataObj = psychoJS._experiment._trialsData;
-        
-        // --- ROBUST CSV CONSTRUCTION ---
-        const SEP = ';'; 
-        
-        // A. Collect EVERY unique key present in the entire experiment
-        let headers = [];
-        for (const trial of dataObj) {
-            for (const key in trial) {
-                if (!headers.includes(key)) {
-                    headers.push(key);
-                }
-            }
-        }
-        
-        // B. Helper to escape/quote values
-        const formatCell = (val) => {
-            if (val === null || val === undefined) return '';
-            let str = (typeof val === 'object') ? JSON.stringify(val) : String(val);
-            if (str.includes(SEP) || str.includes('"') || str.includes('\n') || str.includes('\r')) {
-                str = '"' + str.replace(/"/g, '""') + '"';
-            }
-            return str;
-        };
-        
-        // C. Build CSV string
-        let csvRows = [];
-        csvRows.push(headers.join(SEP)); // Add the full header list
-        
-        for (const rowObj of dataObj) {
-            // For every trial, map the value to the correct header index
-            // If a trial doesn't have a specific column, it stays empty (;;)
-            const rowValues = headers.map(h => formatCell(rowObj[h]));
-            csvRows.push(rowValues.join(SEP));
-        }
-        
-        let data = csvRows.join('\n');
-        // --- END CSV CONSTRUCTION ---
-        
-        // 4. Send to OSF via DataPipe
-        console.log('Saving all ' + headers.length + ' columns to DataPipe...');
-        fetch('https://pipe.jspsych.org/api/data', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: '*/*',
-            },
-            body: JSON.stringify({
-                experimentID: 'H1r1lSmRRNeY', 
-                filename: filename,
-                data: data,
-            }),
-        }).then(response => {
-            if (response.ok) console.log('Save successful');
-            return response.json();
-        }).then(data => {
-            console.log(data);
-            quitPsychoJS();
-        }).catch(err => {
-            console.error('Save failed:', err);
-            quitPsychoJS();
-        });
         psychoJS.experiment.addData('send_experiment_to_osf.started', globalClock.getTime());
         send_experiment_to_osfMaxDuration = null
         // keep track of which components have finished
@@ -3171,6 +3102,91 @@ async function quitPsychoJS(message, isCompleted) {
       if (psychoJS.experiment.isEntryEmpty()) {
         psychoJS.experiment.nextEntry();
       }
+      // 1. Disable default browser download
+      psychoJS._saveResults = 0;
+      
+      // 2. Generate filename
+      let filename = psychoJS._experiment._experimentName + '_' + psychoJS._experiment._datetime + '.csv';
+      
+      // 3. Extract data
+      let dataObj = psychoJS._experiment._trialsData;
+      
+      console.group('DataPipe Debugging');
+      console.log('Total rows in dataObj:', dataObj.length);
+      console.log('Sample of first row:', dataObj[0]);
+      console.log('Sample of last row:', dataObj[dataObj.length - 1]);
+      
+      // --- ROBUST CSV CONSTRUCTION ---
+      const SEP = ';'; 
+      
+      // A. Collect EVERY unique key present in the entire experiment
+      let headers = [];
+      dataObj.forEach((trial, index) => {
+          if (typeof trial !== 'object' || trial === null) {
+              console.warn(`Row ${index} is not a valid object:`, trial);
+              return;
+          }
+          Object.keys(trial).forEach(key => {
+              if (!headers.includes(key)) {
+                  headers.push(key);
+              }
+          });
+      });
+      
+      console.log('Total unique columns identified:', headers.length);
+      console.log('Columns list:', headers);
+      
+      // B. Helper to escape/quote values
+      const formatCell = (val) => {
+          if (val === null || val === undefined) return '';
+          let str = (typeof val === 'object') ? JSON.stringify(val) : String(val);
+          if (str.includes(SEP) || str.includes('"') || str.includes('\n') || str.includes('\r')) {
+              str = '"' + str.replace(/"/g, '""') + '"';
+          }
+          return str;
+      };
+      
+      // C. Build CSV string
+      let csvRows = [];
+      csvRows.push(headers.join(SEP));
+      
+      dataObj.forEach((rowObj, index) => {
+          // Ensure we handle rows that might not be objects
+          if (typeof rowObj !== 'object' || rowObj === null) {
+              csvRows.push(new Array(headers.length).fill('').join(SEP));
+              return;
+          }
+          const rowValues = headers.map(h => formatCell(rowObj[h]));
+          csvRows.push(rowValues.join(SEP));
+      });
+      
+      let data = csvRows.join('\n');
+      console.log('Final CSV string length:', data.length);
+      console.groupEnd();
+      
+      // 4. Send to OSF via DataPipe
+      console.log('Sending to DataPipe...');
+      fetch('https://pipe.jspsych.org/api/data', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+              Accept: '*/*',
+          },
+          body: JSON.stringify({
+              experimentID: 'H1r1lSmRRNeY', 
+              filename: filename,
+              data: data,
+          }),
+      }).then(response => {
+          console.log('DataPipe Response Status:', response.status);
+          return response.json();
+      }).then(data => {
+          console.log('DataPipe Server Response:', data);
+          // quitPsychoJS(); // Commented out for debugging so you can read the console
+      }).catch(err => {
+          console.error('Save failed:', err);
+          // quitPsychoJS();
+      });
       psychoJS.window.close();
       psychoJS.quit({message: message, isCompleted: isCompleted});
       
