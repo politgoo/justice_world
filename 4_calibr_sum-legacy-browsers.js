@@ -548,7 +548,7 @@ async function experimentInit() {
     text: 'Сохраняем данные',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 1], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -2882,7 +2882,7 @@ function thanksRoutineBegin(snapshot) {
         // keep track of whether this Routine was forcibly ended
         routineForceEnded = false;
         thanksClock.reset(routineTimer.getTime());
-        routineTimer.add(1.000000);
+        routineTimer.add(3.500000);
         thanksMaxDurationReached = false;
         // update component parameters for each repeat
         psychoJS.experiment.addData('thanks.started', globalClock.getTime());
@@ -2922,7 +2922,7 @@ function thanksRoutineEachFrame() {
         if (text_th.status === PsychoJS.Status.STARTED) {
         }
         
-        frameRemains = 0.0 + 1.0 - psychoJS.window.monitorFramePeriod * 0.75;// most of one frame period left
+        frameRemains = 0.0 + 3.5 - psychoJS.window.monitorFramePeriod * 0.75;// most of one frame period left
         if (text_th.status === PsychoJS.Status.STARTED && t >= frameRemains) {
           // keep track of stop time/frame for later
           text_th.tStop = t;  // not accounting for scr refresh
@@ -2973,7 +2973,7 @@ function thanksRoutineEnd(snapshot) {
             routineTimer.reset();} else if (thanksMaxDurationReached) {
             thanksClock.add(thanksMaxDuration);
         } else {
-            thanksClock.add(1.000000);
+            thanksClock.add(3.500000);
         }
         // Routines running outside a loop should always advance the datafile row
         if (currentLoop === psychoJS.experiment) {
@@ -3010,45 +3010,45 @@ function send_experiment_to_osfRoutineBegin(snapshot) {
         // 3. Extract data
         let dataObj = psychoJS._experiment._trialsData;
         
-        // --- CSV CONSTRUCTION START ---
-        const SEP = ';';
+        // --- ROBUST CSV CONSTRUCTION ---
+        const SEP = ';'; 
         
-        // Helper to escape values: handles quotes, newlines, and the separator
+        // A. Collect EVERY unique key present in the entire experiment
+        let headers = [];
+        for (const trial of dataObj) {
+            for (const key in trial) {
+                if (!headers.includes(key)) {
+                    headers.push(key);
+                }
+            }
+        }
+        
+        // B. Helper to escape/quote values
         const formatCell = (val) => {
             if (val === null || val === undefined) return '';
-            
-            // Convert objects/arrays to JSON strings, otherwise to String
             let str = (typeof val === 'object') ? JSON.stringify(val) : String(val);
-            
-            // Check if the cell needs to be quoted
-            // (contains separator, double quotes, or newlines)
             if (str.includes(SEP) || str.includes('"') || str.includes('\n') || str.includes('\r')) {
-                // Double up existing quotes and wrap in quotes
                 str = '"' + str.replace(/"/g, '""') + '"';
             }
             return str;
         };
         
-        // Get headers (column names) from the first trial
-        const headers = Object.keys(dataObj[0]);
-        
-        // Build the CSV string row by row
+        // C. Build CSV string
         let csvRows = [];
+        csvRows.push(headers.join(SEP)); // Add the full header list
         
-        // Add header row
-        csvRows.push(headers.join(SEP));
-        
-        // Add data rows
         for (const rowObj of dataObj) {
+            // For every trial, map the value to the correct header index
+            // If a trial doesn't have a specific column, it stays empty (;;)
             const rowValues = headers.map(h => formatCell(rowObj[h]));
             csvRows.push(rowValues.join(SEP));
         }
         
         let data = csvRows.join('\n');
-        // --- CSV CONSTRUCTION END ---
+        // --- END CSV CONSTRUCTION ---
         
         // 4. Send to OSF via DataPipe
-        console.log('Saving data via DataPipe...');
+        console.log('Saving all ' + headers.length + ' columns to DataPipe...');
         fetch('https://pipe.jspsych.org/api/data', {
             method: 'POST',
             headers: {
@@ -3056,23 +3056,18 @@ function send_experiment_to_osfRoutineBegin(snapshot) {
                 Accept: '*/*',
             },
             body: JSON.stringify({
-                experimentID: 'H1r1lSmRRNeY', // Ensure this matches your DataPipe ID
+                experimentID: 'H1r1lSmRRNeY', 
                 filename: filename,
                 data: data,
             }),
         }).then(response => {
-            if (response.ok) {
-                console.log('Data saved successfully!');
-            } else {
-                console.error('Data saving failed:', response.statusText);
-            }
+            if (response.ok) console.log('Save successful');
             return response.json();
         }).then(data => {
             console.log(data);
-            // Force experiment end after saving
             quitPsychoJS();
         }).catch(err => {
-            console.error('Network error during save:', err);
+            console.error('Save failed:', err);
             quitPsychoJS();
         });
         psychoJS.experiment.addData('send_experiment_to_osf.started', globalClock.getTime());
