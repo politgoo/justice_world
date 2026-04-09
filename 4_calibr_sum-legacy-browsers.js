@@ -520,7 +520,7 @@ async function experimentInit() {
     overflow: 'visible',
     editable: true,
     multiline: true,
-    anchor: 'center',
+    anchor: 'bottom-center',
     depth: -1.0 
   });
   
