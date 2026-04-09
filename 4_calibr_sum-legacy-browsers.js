@@ -504,7 +504,7 @@ async function experimentInit() {
     text: '',
     placeholder: undefined,
     font: 'Arial',
-    pos: [0, 0.2], 
+    pos: [0, 0.3], 
     draggable: false,
     letterHeight: 0.05,
     lineSpacing: 1.0,
