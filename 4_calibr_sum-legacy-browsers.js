@@ -492,7 +492,7 @@ async function experimentInit() {
     text: 'Для студентов РАНХиГСа - введите номер строки для учета баллов , для нестудентов - 2 любые буквы и нажмите на пробел для завершения:',
     font: 'Arial',
     units: undefined, 
-    pos: [0, 0.5], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
     color: new util.Color('white'),  opacity: undefined,
     depth: 0.0 
@@ -504,7 +504,7 @@ async function experimentInit() {
     text: '',
     placeholder: undefined,
     font: 'Arial',
-    pos: [0, (- 0.4)], 
+    pos: [0, (- 0.2)], 
     draggable: false,
     letterHeight: 0.05,
     lineSpacing: 1.0,
