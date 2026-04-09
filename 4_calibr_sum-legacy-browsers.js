@@ -504,7 +504,7 @@ async function experimentInit() {
     text: '',
     placeholder: undefined,
     font: 'Arial',
-    pos: [0, (- 0.2)], 
+    pos: [0, 0], 
     draggable: false,
     letterHeight: 0.05,
     lineSpacing: 1.0,
@@ -520,7 +520,7 @@ async function experimentInit() {
     overflow: 'visible',
     editable: true,
     multiline: true,
-    anchor: 'center',
+    anchor: 'bottom-center',
     depth: -1.0 
   });
   
