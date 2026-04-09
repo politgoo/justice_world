@@ -497,7 +497,7 @@ async function experimentInit() {
   text_6 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_6',
-    text: 'Для студентов РАНХиГСа - введите номер строки для учета баллов , для нестудентов - 2 любые буквы и нажмите на пробел для завершения.',
+    text: 'Для студентов РАНХиГСа - введите номер строки для учета баллов, \nдля нестудентов - 2 любые буквы \nи нажмите на пробел для завершения.',
     font: 'Arial',
     units: undefined, 
     pos: [0, 0], draggable: false, height: 0.05,  wrapWidth: undefined, ori: 0.0,
